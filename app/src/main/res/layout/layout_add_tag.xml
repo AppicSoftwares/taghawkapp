@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/White"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/include_header"
+            layout="@layout/layout_header" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/_4sdp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:padding="@dimen/_8sdp"
+            android:visibility="gone">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_step_one_circle"
+                style="@style/add_tag_circle"
+                android:text="@string/_1" />
+
+            <View
+                android:id="@+id/view_linear_line"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/LightGrey" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_step_two_circle"
+                style="@style/add_tag_circle_disabled"
+                android:text="@string/_2" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/home_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</layout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/Black">
+
+        <com.github.chrisbanes.photoview.PhotoView
+            android:id="@+id/iv_photo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/vp_images"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_310sdp"
+            android:layout_centerVertical="true" />
+
+        <com.tbuonomo.viewpagerdotsindicator.SpringDotsIndicator
+            android:id="@+id/circle_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="@dimen/_10sdp"
+            app:dampingRatio="0.5"
+            app:dotsColor="@color/colorPrimary"
+            app:dotsCornerRadius="@dimen/_10sdp"
+            app:dotsSize="@dimen/_7sdp"
+            app:dotsSpacing="@dimen/_3sdp"
+            app:dotsStrokeColor="@color/White"
+            app:dotsStrokeWidth="1dp"
+            app:stiffness="500" />
+
+        <FrameLayout
+            android:id="@+id/fl_close"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_alignParentTop="true"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:padding="@dimen/_5sdp">
+
+            <ImageView
+                android:id="@+id/iv_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:padding="@dimen/_10sdp"
+                android:src="@drawable/ic_close"
+                android:tint="@color/White" />
+        </FrameLayout>
+    </RelativeLayout>
+</layout>

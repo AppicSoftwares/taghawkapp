@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_splash_bg"
+        android:paddingStart="@dimen/_20sdp"
+        android:paddingEnd="@dimen/_20sdp"
+        android:paddingBottom="@dimen/_10sdp">
+<RelativeLayout
+    android:layout_centerInParent="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/llone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:src="@drawable/ic_dummy_appicon" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:fontFamily="@font/galano_grotesque_medium"
+                    android:text="@string/please_create_your_account_by_your_full_legal_name1"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/_15ssp" />
+            </LinearLayout>
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="@dimen/_8sdp"
+                    app:cardBackgroundColor="@color/White"
+                    app:cardCornerRadius="@dimen/_8sdp"
+                    app:cardElevation="@dimen/_3sdp"
+                    app:cardUseCompatPadding="true">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_12sdp">
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/text_input_first_name"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:fontFamily="@font/galano_grotesque_regular"
+                            android:hint="@string/first_name_"
+                            android:maxLength="30"
+                            android:textColorHint="#d1dfe9"
+                            app:boxCornerRadiusBottomEnd="@dimen/_8sdp"
+                            app:boxCornerRadiusBottomStart="@dimen/_8sdp"
+                            app:boxCornerRadiusTopEnd="@dimen/_8sdp"
+                            app:boxCornerRadiusTopStart="@dimen/_8sdp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/et_first_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/galano_grotesque_regular"
+                                android:imeOptions="actionNext"
+                                android:inputType="textCapWords"
+                                android:maxLength="20"
+                                android:singleLine="true"
+                                android:textColorHint="#d1dfe9"
+                                android:textSize="@dimen/_12ssp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+
+                            android:id="@+id/text_input_last_name"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:fontFamily="@font/galano_grotesque_regular"
+                            android:hint="@string/last_name_"
+
+                            android:textColorHint="#d1dfe9"
+                            app:boxCornerRadiusBottomEnd="@dimen/_8sdp"
+                            app:boxCornerRadiusBottomStart="@dimen/_8sdp"
+                            app:boxCornerRadiusTopEnd="@dimen/_8sdp"
+                            app:boxCornerRadiusTopStart="@dimen/_8sdp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/et_last_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/galano_grotesque_regular"
+                                android:imeOptions="actionNext"
+                                android:inputType="textCapWords"
+                                android:maxLength="20"
+                                android:singleLine="true"
+                                android:textColorHint="#d1dfe9"
+                                android:textSize="@dimen/_12ssp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/text_input_email"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:hint="@string/email_id_mandatory"
+                            android:textColorHint="#d1dfe9"
+                            app:boxCornerRadiusBottomEnd="@dimen/_8sdp"
+                            app:boxCornerRadiusBottomStart="@dimen/_8sdp"
+                            app:boxCornerRadiusTopEnd="@dimen/_8sdp"
+                            app:boxCornerRadiusTopStart="@dimen/_8sdp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/et_email"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/galano_grotesque_regular"
+                                android:imeOptions="actionNext"
+                                android:inputType="textEmailAddress"
+                                android:maxLength="50"
+                                android:singleLine="true"
+                                android:textSize="@dimen/_12ssp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/text_input_password"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:hint="@string/password_mandatory"
+                            android:textColorHint="#d1dfe9"
+                            app:boxCornerRadiusBottomEnd="@dimen/_8sdp"
+                            app:boxCornerRadiusBottomStart="@dimen/_8sdp"
+                            app:boxCornerRadiusTopEnd="@dimen/_8sdp"
+                            app:boxCornerRadiusTopStart="@dimen/_8sdp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/et_password"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890"
+                                android:fontFamily="@font/galano_grotesque_regular"
+                                android:imeOptions="actionNext"
+                                android:inputType="textPassword"
+                                android:maxLength="15"
+                                android:singleLine="true"
+                                android:textSize="@dimen/_12ssp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/text_input_invitation"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:hint="@string/invitation_code_optional"
+                            android:textColorHint="#d1dfe9"
+                            app:boxCornerRadiusBottomEnd="@dimen/_8sdp"
+                            app:boxCornerRadiusBottomStart="@dimen/_8sdp"
+                            app:boxCornerRadiusTopEnd="@dimen/_8sdp"
+                            app:boxCornerRadiusTopStart="@dimen/_8sdp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/et_invitation"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/galano_grotesque_regular"
+                                android:imeOptions="actionDone"
+                                android:singleLine="true"
+                                android:textSize="@dimen/_12ssp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/card_sign_up"
+                            android:layout_width="match_parent"
+
+                            android:layout_height="@dimen/_38sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:background="@drawable/ic_login_button_bg"
+                            android:fontFamily="@font/galano_grotesque_semi_bold"
+                            android:gravity="center"
+                            android:text="@string/sign_up"
+                            android:textAllCaps="false"
+                            android:textColor="@color/White"
+                            android:textSize="@dimen/_15ssp" />
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card_social_sign_up"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:visibility="visible"
+                            app:cardCornerRadius="@dimen/_10sdp"
+                            app:cardElevation="@dimen/_5sdp"
+                            app:cardUseCompatPadding="false">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_38sdp"
+                                android:background="@drawable/gray_rounder_button"
+                                android:drawableStart="@drawable/ic_login_fb"
+                                android:fontFamily="@font/galano_grotesque_medium"
+                                android:gravity="center"
+                                android:padding="@dimen/_8sdp"
+                                android:paddingStart="@dimen/_10sdp"
+                                android:text="@string/connect_with_facebool"
+                                android:textAllCaps="false"
+                                android:textColor="@color/facebook_blue"
+                                android:textSize="@dimen/_12ssp" />
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </androidx.core.widget.NestedScrollView>
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llone"
+            android:fontFamily="@font/galano_grotesque_semi_bold"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/_3sdp"
+            android:text="@string/i_m_already_a_member"
+            android:textAllCaps="false"
+            android:textColor="@color/txt_black"
+            android:textSize="@dimen/_14ssp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_explore_as_guest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_login"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/galano_grotesque_semi_bold"
+            android:gravity="center_horizontal"
+            android:text="@string/explore_as_guest"
+            android:textAllCaps="false"
+            android:textColor="@color/White"
+            android:textSize="@dimen/_14ssp"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+    </RelativeLayout>
+</layout>

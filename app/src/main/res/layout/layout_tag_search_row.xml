@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="searchData"
+            type="com.taghawk.model.tag.TagData" />
+    </data>
+
+    <LinearLayout
+        android:id="@+id/ll_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/_8sdp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableStart="@drawable/ic_home_search"
+            android:drawablePadding="@dimen/_8sdp"
+            android:padding="@dimen/_8sdp"
+
+            android:text="@{searchData.tagName}"
+            android:textSize="@dimen/_13sdp" />
+
+    </LinearLayout>
+</layout>

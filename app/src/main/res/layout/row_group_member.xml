@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/ll_group_member"
+        android:background="?attr/selectableItemBackground"
+        android:layout_marginTop="@dimen/_15sdp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_member"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:background="?attr/selectableItemBackground"
+            android:src="@drawable/ic_detail_user_placeholder"
+            />
+        <TextView
+            android:id="@+id/tv_member_name"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/galano_grotesque_medium"
+            tools:text="Annie Hall (You)"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:background="?attr/selectableItemBackground"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_gravity="center"
+            android:textColor="@color/txt_black"
+            android:textSize="@dimen/_12ssp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll_owner_type"
+            android:paddingBottom="@dimen/_8sdp"
+            android:paddingTop="@dimen/_8sdp"
+            android:paddingStart="@dimen/_18sdp"
+            android:paddingEnd="@dimen/_18sdp"
+            android:background="@drawable/extra_rounded_corner_light_color_primary_bg"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/iv_owner_icon"
+                android:layout_marginEnd="3dp"
+                android:src="@drawable/ic_group_owner"
+                android:tint="@color/colorPrimary"/>
+
+            <TextView
+                android:id="@+id/tv_member_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/galano_grotesque_semi_bold"
+                android:layout_gravity="center"
+                tools:text="Owner"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/_9ssp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</layout>

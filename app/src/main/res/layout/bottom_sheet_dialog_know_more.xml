@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/bottom_sheet_shape"
+            android:orientation="vertical"
+            android:padding="@dimen/_10sdp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/ic_gallery_close" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:src="@drawable/ic_action_popup_rec"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:fontFamily="@font/galano_grotesque_semi_bold"
+                android:text="@string/reward_points_can_be_redeemed_for"
+                android:textColor="@color/txt_black"
+                android:textSize="@dimen/_15ssp" />
+
+            <TextView
+                android:id="@+id/tv_first_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_title"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:lineSpacingExtra="@dimen/_8sdp"
+                android:fontFamily="@font/galano_grotesque_regular"
+                android:text="@string/promoting_your_selling_items_n_creating_tags_on_map"
+                android:textColor="@color/txt_black"
+                android:textSize="@dimen/_13ssp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_title1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_first_msg"
+
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/galano_grotesque_semi_bold"
+                android:text="@string/reward_points_can_be_gained_from"
+                android:textColor="@color/txt_black"
+                android:textSize="@dimen/_15ssp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_title1"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:fontFamily="@font/galano_grotesque_regular"
+                android:text="@string/each_new_signup_with_your_referral_code_will_reward_both_of_you_50_points_each_dollar_transaction_via_app_including_buying_and_selling_will_reward_you_1_point"
+                android:textColor="@color/txt_black"
+                android:textSize="@dimen/_13ssp" />
+
+
+        </RelativeLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:clickable="true"
+                android:elevation="@dimen/_4sdp"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_15sdp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/image_view_close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/_5sdp"
+                    android:src="@drawable/ic_close"
+                    android:tint="@color/txt_black" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/galano_grotesque_medium"
+                    android:maxLength="25"
+                    android:text="@string/payment"
+                    android:textColor="@color/txt_black"
+                    android:textSize="@dimen/_14ssp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_reset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/reset"
+                    android:textColor="@color/reset_color"
+                    android:textSize="@dimen/_12sdp"
+                    android:visibility="gone" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_share"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_share_white"
+                    android:tint="@color/Black"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/_15sdp">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_card_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:fontFamily="@font/galano_grotesque_medium"
+                    android:hint="@string/card_number"
+                    android:inputType="number"
+                    android:maxLength="16"
+                    android:text="4263982640269299"
+                    android:textColor="@color/txt_black" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/et_expiry"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_4sdp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/galano_grotesque_medium"
+                        android:hint="@string/mm_yy"
+                        android:inputType="phone"
+                        android:maxLength="5"
+                        android:text="04/23"
+                        android:textColor="@color/txt_black" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/et_cvv"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_4sdp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/galano_grotesque_medium"
+                        android:hint="@string/cvv"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:text="738"
+                        android:textColor="@color/txt_black" />
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_card_holder_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:fontFamily="@font/galano_grotesque_medium"
+                    android:hint="@string/card_holder_name"
+                    android:inputType="text"
+                    android:text="demo user"
+                    android:textColor="@color/txt_black" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_zip_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:fontFamily="@font/galano_grotesque_medium"
+                    android:hint="@string/zip_code"
+                    android:inputType="text"
+                    android:text="111222"
+                    android:textColor="@color/txt_black" />
+
+                <CheckBox
+                    android:id="@+id/check_box_save_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:fontFamily="@font/galano_grotesque_regular"
+                    android:paddingStart="@dimen/_8sdp"
+                    android:text="@string/save_this_card"
+                    android:textSize="@dimen/_12sdp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/text_view_pay"
+                    android:layout_width="@dimen/_220sdp"
+                    android:layout_height="@dimen/_36sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:background="@drawable/ic_buy_button"
+                    android:fontFamily="@font/galano_grotesque_semi_bold"
+                    android:gravity="center"
+                    android:text="@string/pay"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/_14sdp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_1sdp"
+                        android:background="@color/Gray" />
+
+                    <com.taghawk.custom_view.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/galano_grotesque_regular"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:paddingEnd="@dimen/_10sdp"
+                        android:text="or"
+                        android:textColor="@color/Black"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <View
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_1sdp"
+                        android:background="@color/Gray" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/tv_checkout"
+                    android:layout_width="@dimen/_220sdp"
+                    android:layout_height="@dimen/_44sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:background="@drawable/googlepay_button_no_shadow_background"
+                    android:clickable="true"
+                    android:contentDescription="@string/googlepay_button_content_description"
+                    android:focusable="true"
+                    android:paddingTop="2sp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:duplicateParentState="true"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:weightSum="2">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:duplicateParentState="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/buy_with_googlepay_button_content" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:duplicateParentState="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/googlepay_button_overlay" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progress_bar_pay"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</layout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.AppCompatTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_list_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fontFamily="@font/galano_grotesque_regular"
+    android:gravity="center|start"
+    android:paddingStart="@dimen/_14sdp"
+    android:paddingTop="@dimen/_7sdp"
+    android:paddingEnd="@dimen/_14sdp"
+    android:paddingBottom="@dimen/_7sdp"
+    android:singleLine="true"
+    android:textColor="@color/txt_black"
+    android:textSize="@dimen/_13ssp" />
+
+

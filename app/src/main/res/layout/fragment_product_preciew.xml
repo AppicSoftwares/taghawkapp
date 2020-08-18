@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/White"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/_10sdp">
+
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nested_scrol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_310sdp"
+                    android:background="@android:color/transparent">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.viewpager.widget.ViewPager
+                            android:id="@+id/vp_images"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_310sdp" />
+                    </LinearLayout>
+
+                    <com.tbuonomo.viewpagerdotsindicator.SpringDotsIndicator
+                        android:id="@+id/circle_indicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="@dimen/_6sdp"
+                        app:dampingRatio="0.5"
+                        app:dotsColor="@color/colorPrimary"
+                        app:dotsCornerRadius="@dimen/_10sdp"
+                        app:dotsSize="@dimen/_7sdp"
+                        app:dotsSpacing="@dimen/_3sdp"
+                        app:dotsStrokeColor="@color/White"
+                        app:dotsStrokeWidth="1dp"
+                        app:stiffness="500" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/iv_like"
+                        android:layout_width="@dimen/_48sdp"
+                        android:layout_height="@dimen/_48sdp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="@dimen/_20sdp"
+                        android:layout_marginBottom="@dimen/_8sdp"
+                        android:background="@drawable/circle_with_shadow"
+                        android:padding="@dimen/_12sdp"
+                        android:src="@drawable/ic_like_unfill"
+                        android:visibility="gone" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_54sdp"
+                        android:background="@drawable/shadow" />
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:layout_marginBottom="@dimen/_15sdp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv_product_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:fontFamily="@font/galano_grotesque_bold"
+                            android:textColor="@color/txt_black"
+                            android:textSize="@dimen/_15sdp" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv_negotiable"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_toEndOf="@+id/tv_product_price"
+                            android:fontFamily="@font/galano_grotesque_regular"
+                            android:text="@string/negotiable"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/_9sdp"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_title_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:fontFamily="@font/galano_grotesque_medium"
+                        android:textColor="@color/txt_black"
+                        android:textSize="@dimen/_13sdp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_seller_product_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:fontFamily="@font/galano_grotesque_regular"
+                        android:textColor="@color/txt_black"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_delivery_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:fontFamily="@font/galano_grotesque_regular"
+
+                        android:textColor="@color/txt_light_gray"
+                        android:textSize="@dimen/_11sdp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_product_posted_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:fontFamily="@font/galano_grotesque_regular"
+                        android:textColor="@color/txt_light_gray"
+                        android:textSize="@dimen/_11sdp"
+                        android:visibility="gone"
+                        tools:text="Posted 1 hour ago" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="@dimen/_14sdp"
+                        android:background="@color/txt_light_gray" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_product_condition"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:fontFamily="@font/galano_grotesque_regular"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/_12sdp" />
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_product_description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:fontFamily="@font/galano_grotesque_regular"
+                        android:textColor="@color/txt_black"
+                        android:textSize="@dimen/_11sdp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_user_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/galano_grotesque_semi_bold"
+                        android:textColor="@color/txt_black"
+                        android:textSize="@dimen/_12sdp"
+                        android:visibility="gone"
+                        tools:text="Central Business District, Australia" />
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_map"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_192sdp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        app:cardCornerRadius="@dimen/_20sdp">
+
+                        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:id="@+id/map"
+                            android:name="com.google.android.gms.maps.SupportMapFragment"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                    </androidx.cardview.widget.CardView>
+
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv_txt_shared_tag"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:layout_marginEnd="@dimen/_5sdp"
+                            android:fontFamily="@font/galano_grotesque_regular"
+                            android:text="@string/share_to_tags"
+                            android:textColor="@color/txt_black"
+                            android:textSize="@dimen/_11sdp" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv_share_tags_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:fontFamily="@font/galano_grotesque_semi_bold"
+                            android:text=""
+                            android:textColor="@color/txt_black"
+                            android:textSize="@dimen/_11sdp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_post"
+                        android:layout_width="@dimen/_220sdp"
+                        android:layout_height="@dimen/_44sdp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:background="@drawable/ic_buy_button"
+                        android:fontFamily="@font/galano_grotesque_semi_bold"
+                        android:gravity="center"
+                        android:text="@string/post"
+                        android:textColor="@color/White"
+                        android:textSize="@dimen/_14sdp" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+
+        <include
+            android:id="@+id/include_header"
+            layout="@layout/layout_common_header" />
+    </RelativeLayout>
+</layout>

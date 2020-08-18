@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/White">
+
+        <include
+            android:id="@+id/include_header"
+            layout="@layout/layout_header" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/include_header"
+            android:layout_marginTop="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/include_header"
+                android:orientation="vertical"
+                android:padding="@dimen/_8sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/galano_grotesque_medium"
+                        android:text="Checking Account Number"
+                        android:textColor="@color/txt_black"
+                        android:textSize="@dimen/_13sdp" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/iv_accounting_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:src="@drawable/ic_info" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_account_number"
+                        style="@style/routing_number"
+                        android:layout_marginEnd="@dimen/_4sdp"
+                        android:hint="@string/account_number"
+                        android:inputType="number" />
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_verifiy_account"
+                        style="@style/routing_number"
+                        android:layout_marginStart="@dimen/_4sdp"
+                        android:hint="Confirm Account"
+                        android:inputType="number" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/galano_grotesque_medium"
+                        android:text="@string/bank_routing_number"
+                        android:textColor="@color/txt_black"
+                        android:textSize="@dimen/_13sdp" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/iv_routing_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:src="@drawable/ic_info" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_routing_number"
+                        style="@style/routing_number"
+                        android:layout_marginRight="@dimen/_4sdp"
+                        android:hint="@string/routing_number"
+                        android:inputType="text"
+                        android:maxLength="9" />
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_verifiy_routing_number"
+                        style="@style/routing_number"
+                        android:layout_marginStart="@dimen/_4sdp"
+                        android:hint="Confirm Routing"
+                        android:inputType="text"
+                        android:maxLength="9" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/galano_grotesque_medium"
+                        android:text="@string/account_holder_name"
+                        android:textColor="@color/txt_black"
+                        android:textSize="@dimen/_13sdp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_first_name"
+                        style="@style/routing_number"
+                        android:layout_marginEnd="@dimen/_4sdp"
+                        android:hint="@string/first_name"
+                        android:inputType="text" />
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_last_name"
+                        style="@style/routing_number"
+                        android:layout_marginStart="@dimen/_4sdp"
+                        android:hint="@string/last_name"
+                        android:inputType="text" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/galano_grotesque_medium"
+                        android:text="Bank Name"
+                        android:textColor="@color/txt_black"
+                        android:textSize="@dimen/_13sdp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_bank_name"
+                        style="@style/routing_number"
+                        android:hint="E.g. Bank of America"
+                        android:inputType="text" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:background="@color/light_gray" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/_180sdp"
+                    android:layout_height="@dimen/_150sdp"
+                    android:visibility="gone"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:src="@drawable/ic_stripe_screenshot" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_add"
+                    android:layout_width="@dimen/_160sdp"
+                    android:layout_height="@dimen/_38sdp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:background="@drawable/ic_buy_button"
+                    android:fontFamily="@font/galano_grotesque_semi_bold"
+                    android:gravity="center"
+                    android:text="@string/submit"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/_14sdp" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </RelativeLayout>
+</layout>

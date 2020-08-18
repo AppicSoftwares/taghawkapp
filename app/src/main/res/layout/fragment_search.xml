@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/White">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/White"
+                android:elevation="@dimen/_4sdp"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/_8sdp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:padding="@dimen/_5sdp"
+                    android:src="@drawable/ic_back_black" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_search"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:background="@color/White"
+                    android:focusable="true"
+                    android:hint="@string/search"
+                    android:imeOptions="actionSearch"
+                    android:padding="@dimen/_8sdp"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:maxLength="20"
+                    android:textColorHint="@color/line_hint_color" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_cross"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:padding="@dimen/_8sdp"
+                    android:src="@drawable/ic_close"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_suggestion_search_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:overScrollMode="never"
+                android:scrollbars="none"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tv_no_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:visibility="gone">
+            <include
+                android:id="@+id/include_empty"
+                layout="@layout/layout_empty_place_holder" />
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

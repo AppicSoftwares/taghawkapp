@@ -1,0 +1,2 @@
+include ':app', ':amazons3library', ':ucrop', 'bluesnap-android'
+

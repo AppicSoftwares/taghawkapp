@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/_15sdp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/galano_grotesque_bold"
+                    android:text="You earn 1% cash back on all products sold within your Tag"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/_12sdp"
+                    android:visibility="visible" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/add_tag_edit_text"
+                    android:text="@string/upload_logo" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal">
+
+                    <!--<android.support.v7.widget.CardView-->
+                    <!--android:id="@+id/card_add_image"-->
+                    <!--android:layout_width="@dimen/_110sdp"-->
+                    <!--android:layout_height="@dimen/_110sdp"-->
+                    <!--app:cardCornerRadius="@dimen/_16sdp"-->
+                    <!--app:cardUseCompatPadding="true">-->
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/iv_tag_photo"
+                        android:layout_width="@dimen/_105sdp"
+                        android:layout_height="@dimen/_105sdp"
+                        android:src="@drawable/ic_adddetail_upload_ph" />
+
+
+                    <!--</android.support.v7.widget.CardView>-->
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:text="@string/upload_jpg_png_file"
+                        android:textColor="@color/txt_light_gray"
+                        android:textSize="@dimen/_10sdp" />
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/add_tag_edit_text"
+                    android:text="@string/tag_name" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_tag_name"
+                    style="@style/add_product_edit_text"
+                    android:digits="qwertyuiopasdfghjklzxcvbnm 1234567890 QWERTYUIOPASDFGHJKLZXCVBNM"
+                    android:hint="@string/hint_tag_name" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/add_product"
+                    android:layout_marginTop="@dimen/_14sdp"
+                    android:text="Tag Type*" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_tag_type_2"
+                    style="@style/add_product_edit_text"
+                    android:drawableEnd="@drawable/ic_filter_dropdown"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/select"
+                    android:paddingEnd="@dimen/_15sdp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/add_product"
+                    android:layout_marginTop="@dimen/_14sdp"
+                    android:text="@string/tag_type_" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_tag_type"
+                    style="@style/add_product_edit_text"
+                    android:drawableEnd="@drawable/ic_filter_dropdown"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/select"
+                    android:paddingEnd="@dimen/_15sdp" />
+
+
+                <LinearLayout
+                    android:id="@+id/ll_type_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv_email"
+                            style="@style/shipping_avalibilty"
+                            android:text="@string/option_email" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv_password"
+                            style="@style/shipping_avalibilty"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:maxLength="20"
+                            android:text="@string/option_password" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv_document"
+                            style="@style/shipping_avalibilty"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:text="@string/option_document" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/et_verification_email"
+                            style="@style/add_product_edit_text"
+                            android:hint="@string/tag_verification_email"
+                            android:paddingStart="@dimen/_30sdp"
+                            android:text="" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv_at"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:paddingTop="@dimen/_11sdp"
+                            android:text="\@"
+                            android:textColor="@color/txt_black"
+                            android:textSize="@dimen/_14sdp" />
+                    </RelativeLayout>
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/et_verification_password"
+                        style="@style/add_product_edit_text"
+                        android:hint="Request Password to Join the Tag"
+                        android:inputType="text"
+                        android:visibility="gone" />
+
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/et_verification_document"
+                        style="@style/add_product_edit_text"
+                        android:hint="Request Documents to Join the Tag"
+                        android:visibility="gone" />
+
+
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/add_product"
+
+                    android:layout_marginTop="@dimen/_14sdp"
+                    android:text="@string/tag_description_to_public_"
+                    android:textColor="@color/txt_black"
+                    android:textSize="@dimen/_11sdp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_tag_description"
+                    style="@style/add_product_edit_text_"
+                    android:layout_height="@dimen/_106sdp"
+                    android:capitalize="sentences"
+                    android:gravity="top|start"
+                    android:hint="Introduce your tag to the public.
+Everyone can see this message on the profile page"
+                    android:imeOptions="flagForceAscii"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:lines="15"
+                    android:maxLength="1000"
+                    android:maxLines="15"
+                    android:paddingTop="@dimen/_8sdp"
+                    android:textSize="@dimen/_13sdp" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/add_product"
+                    android:layout_marginTop="@dimen/_14sdp"
+                    android:text="@string/announcement_to_tag_members_"
+                    android:textColor="@color/txt_black"
+                    android:textSize="@dimen/_11sdp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_tag_announcement"
+                    style="@style/add_product_edit_text_"
+                    android:layout_height="@dimen/_106sdp"
+                    android:capitalize="sentences"
+                    android:gravity="top|start"
+                    android:hint="Send an internal announcement to your tag members.
+Only members in this tag can see this message"
+                    android:imeOptions="flagForceAscii"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:lines="15"
+                    android:maxLength="2500"
+                    android:maxLines="15"
+                    android:paddingTop="@dimen/_8sdp"
+                    android:textSize="@dimen/_13sdp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/add_product"
+                    android:layout_marginTop="@dimen/_14sdp"
+                    android:text="Tag Fundraising Event"
+                    android:textColor="@color/txt_black"
+                    android:textSize="@dimen/_11sdp"
+                    android:visibility="gone" />
+
+                <!--  <androidx.appcompat.widget.AppCompatEditText
+                      android:id="@+id/et_tag_Tag_Fundraising_Event"
+                      style="@style/add_product_edit_text_"
+                      android:capitalize="sentences"
+                      android:gravity="top|start"
+                      android:hint="Goal: $0"
+                      android:imeOptions="flagForceAscii"
+                      android:inputType="textCapSentences|textMultiLine"
+                      android:lines="15"
+                      android:maxLength="1000"
+                      android:maxLines="15"
+                      android:paddingTop="@dimen/_8sdp"
+                      android:textSize="@dimen/_13sdp" />-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_5sdp">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        style="@style/add_product_location"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:hint="$"
+                        android:inputType="number"
+                        android:maxLength="200"
+                        android:paddingStart="@dimen/_50sdp"
+                        android:paddingEnd="@dimen/_30sdp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:text="Goal:"
+                        android:textSize="@dimen/_13sdp"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_tag_Tag_Fundraising_"
+                    style="@style/add_product_edit_text_"
+                    android:layout_height="@dimen/_106sdp"
+                    android:capitalize="sentences"
+                    android:gravity="top|start"
+                    android:hint="Write an appealing description to attract more donors"
+                    android:imeOptions="flagForceAscii"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:lines="15"
+                    android:maxLength="1000"
+                    android:maxLines="15"
+                    android:paddingTop="@dimen/_8sdp"
+                    android:textSize="@dimen/_13sdp"
+                    android:visibility="gone" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/add_product"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:text="*When a product is sold from your tag, the buyer has the option to donate to your fundraising event"
+                    android:textColor="#60000000"
+                    android:textSize="@dimen/_11sdp"
+                    android:visibility="gone" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/add_product"
+                    android:layout_marginTop="@dimen/_14sdp"
+                    android:layout_marginBottom="@dimen/_14sdp"
+                    android:text="@string/location" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/et_tag_location"
+                        style="@style/add_product_location"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:maxLength="200"
+                        android:paddingEnd="@dimen/_30sdp" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/iv_current_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/_15sdp"
+                        android:src="@drawable/ic_current_location" />
+                </RelativeLayout>
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/add_tag_edit_text"
+                    android:text="@string/hundred_points_charged"
+                    android:textColor="@color/Black" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_payment_using"
+                    style="@style/add_product"
+                    android:layout_marginTop="@dimen/_14sdp"
+                    android:text="@string/pay_using" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/et_payment_method"
+                    style="@style/add_product_edit_text"
+                    android:drawableEnd="@drawable/ic_filter_dropdown"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/select"
+                    android:paddingEnd="@dimen/_15sdp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_points_required"
+                    style="@style/add_product_edit_text"
+                    android:textColor="@color/txt_light_gray"
+                    android:visibility="gone" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_next"
+                    android:layout_width="@dimen/_220sdp"
+                    android:layout_height="@dimen/_44sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:background="@drawable/ic_buy_button"
+                    android:fontFamily="@font/galano_grotesque_semi_bold"
+                    android:gravity="center"
+                    android:text="@string/next"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/_14sdp" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+<androidx.cardview.widget.CardView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_3sdp"
+    app:cardBackgroundColor="@color/White"
+    app:cardCornerRadius="@dimen/_5sdp"
+    app:cardElevation="@dimen/_3sdp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/_5sdp">
+
+        <TextView
+            android:id="@+id/tv_view_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:fontFamily="@font/galano_grotesque_medium"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/view_profile"
+            android:textColor="@color/txt_black"
+            android:textSize="@dimen/_11ssp" />
+        <TextView
+            android:id="@+id/tv_message_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:fontFamily="@font/galano_grotesque_medium"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/message"
+            android:textColor="@color/txt_black"
+            android:textSize="@dimen/_11ssp" />
+        <TextView
+            android:id="@+id/tv_make_admin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:fontFamily="@font/galano_grotesque_medium"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/make_group_admin"
+            android:textColor="@color/txt_black"
+            android:textSize="@dimen/_11ssp" />
+        <TextView
+            android:id="@+id/tv_transfer_ownership"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:fontFamily="@font/galano_grotesque_medium"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/transfer_ownership"
+            android:textColor="@color/txt_black"
+            android:textSize="@dimen/_11ssp" />
+        <TextView
+            android:id="@+id/tv_block"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:fontFamily="@font/galano_grotesque_medium"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/block"
+            android:textColor="@color/txt_black"
+            android:textSize="@dimen/_11ssp" />
+        <TextView
+            android:id="@+id/tv_mute"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:fontFamily="@font/galano_grotesque_medium"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/mute"
+            android:textColor="@color/txt_black"
+            android:textSize="@dimen/_11ssp" />
+        <TextView
+            android:id="@+id/tv_remove"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:fontFamily="@font/galano_grotesque_medium"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/remove"
+            android:textColor="@color/txt_black"
+            android:textSize="@dimen/_11ssp" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+</layout>

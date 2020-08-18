@@ -1,0 +1,47 @@
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:background="@android:color/transparent">
+
+        <TextView
+            android:id="@+id/tv_header_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:focusable="false"
+            android:paddingBottom="@dimen/_1sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingStart="@dimen/_5sdp"
+            android:paddingEnd="@dimen/_5sdp"
+            android:ellipsize="end"
+            android:gravity="center"
+            tools:text="dummy"
+            android:fontFamily="@font/galano_grotesque_medium"
+            android:textColor="@color/txt_light_gray"
+            android:textSize="@dimen/_11ssp" />
+
+        <TextView
+            android:id="@+id/tv_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:padding="@dimen/_5sdp"
+            android:ellipsize="end"
+            android:gravity="center"
+            tools:text="dummy"
+            android:lineSpacingExtra="7dp"
+            android:fontFamily="@font/galano_grotesque_medium"
+            android:textColor="@color/txt_light_gray"
+            android:textSize="@dimen/_9ssp" />
+
+    </LinearLayout>
+</layout>

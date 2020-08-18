@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:background="@drawable/bottom_sheet_shape"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:src="@drawable/ic_action_popup_rec" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:fontFamily="@font/galano_grotesque_semi_bold"
+                android:textColor="@color/txt_black"
+                android:textSize="@dimen/_17ssp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_title"
+                android:layout_above="@id/card_ok"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_25sdp"
+                android:fontFamily="@font/galano_grotesque_regular"
+                android:gravity="center_horizontal"
+                android:textColor="@color/txt_black"
+                android:textSize="@dimen/_13ssp" />
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/tv_message_justified"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_below="@+id/tv_title"
+                android:layout_above="@id/card_ok"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_25sdp"
+                android:fontFamily="@font/galano_grotesque_regular"
+                android:gravity="center_horizontal"
+                android:textColor="@color/txt_black"
+                android:textSize="@dimen/_13ssp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/card_ok"
+                android:layout_width="@dimen/_160sdp"
+                android:layout_height="@dimen/_38sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@drawable/ic_buy_button"
+                android:fontFamily="@font/galano_grotesque_semi_bold"
+                android:gravity="center"
+                android:padding="@dimen/_8ssp"
+                android:text="@string/ok"
+                android:textAllCaps="false"
+                android:textColor="@color/White"
+                android:textSize="@dimen/_14ssp" />
+
+        </LinearLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

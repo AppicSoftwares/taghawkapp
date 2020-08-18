@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/rl_main"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_30sdp"
+    android:background="@null"
+    android:layout_marginLeft="@dimen/_10sdp"
+    android:layout_marginRight="@dimen/_10sdp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/tv_country"
+        android:layout_width="wrap_content"
+        android:paddingLeft="@dimen/_10sdp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:textSize="@dimen/_12ssp"
+        android:textDirection="ltr"
+        android:gravity="center"
+        android:text="india"
+        android:textColor="@color/Black"></TextView>
+
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/tv_code"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/_10sdp"
+        android:text="+91"
+        android:layout_alignParentEnd="true"
+        android:textDirection="ltr"
+        android:textSize="@dimen/_12ssp"
+        android:textColor="@color/Black"
+        android:gravity="left|center_vertical"></TextView>
+
+
+</RelativeLayout>

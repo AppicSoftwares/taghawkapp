@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--<data>-->
+
+    <!--<variable-->
+    <!--name="productViewModel"-->
+    <!--type="com.taghawk.model.Home.ImageList" />-->
+    <!--</data>-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_195sdp"
+        android:layout_marginHorizontal="@dimen/_2sdp"
+        android:background="#fff"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_140sdp"
+            android:background="@color/White"
+            app:cardCornerRadius="@dimen/_8sdp"
+            app:cardUseCompatPadding="false">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/ll_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/iv_product"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_140sdp"
+                        android:layout_gravity="center"
+                        android:background="#26464e50"
+                        android:scaleType="fitXY" />
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_promote"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/ic_promote_ribbon" />
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/tv_share_tag_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:button="@drawable/check_box_toggle"
+                    android:checked="false"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/galano_grotesque_regular"
+                    android:maxLines="2"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:text=""
+                    android:textColor="@color/txt_light_gray"
+                    android:textSize="@dimen/_12sdp"
+                    android:visibility="gone" />
+
+                <View
+                    android:id="@+id/view_overlay"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/rounded_transparent_black_overlay"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/iv_tick"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_radio_tick"
+                    android:visibility="gone" />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/rb_selection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:button="@drawable/radio_product_selection"
+                    android:paddingStart="@dimen/_8sdp"
+                    android:paddingTop="@dimen/_8sdp"
+                    android:paddingBottom="@dimen/_8sdp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:layout_marginTop="@dimen/_3sdp">
+
+            <TextView
+                android:id="@+id/tvname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/galano_grotesque_bold"
+                android:text="$12"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:id="@+id/tvtype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_toRightOf="@+id/tvname"
+                android:fontFamily="@font/galano_grotesque_medium"
+                android:text="adhjsfkj"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_13sdp" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_like"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:src="@drawable/ic_like_unfill" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvdis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:fontFamily="@font/galano_grotesque_regular"
+            android:text="adhjsfkj"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/_11sdp" />
+
+        <TextView
+            android:id="@+id/tvlocation1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:fontFamily="@font/galano_grotesque_light"
+            android:text="adhjsfkj"
+            android:textSize="@dimen/_10sdp" />
+    </LinearLayout>
+
+
+</layout>

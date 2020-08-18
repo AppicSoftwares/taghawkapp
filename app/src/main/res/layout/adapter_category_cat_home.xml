@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_marginHorizontal="@dimen/_7sdp"
+        android:id="@+id/cardcat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_category_image"
+                android:layout_width="@dimen/_47sdp"
+                android:layout_height="@dimen/_47sdp"
+                android:padding="@dimen/_1sdp"
+                android:layout_centerHorizontal="true" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_category_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:minWidth="@dimen/_50sdp"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/iv_category_image"
+                android:fontFamily="@font/galano_grotesque_light"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/_10sdp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</layout>

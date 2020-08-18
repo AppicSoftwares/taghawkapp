@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/White"
+        android:paddingBottom="@dimen/_10sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_60sdp"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/header"
+                layout="@layout/layout_header" />
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/nested_scrol"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_cart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/_15sdp">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawableStart="@drawable/ic_promo"
+                                android:drawableEnd="@drawable/ic_promo_dropdown"
+                                android:drawablePadding="@dimen/_8sdp"
+                                android:fontFamily="@font/galano_grotesque_semi_bold"
+                                android:text="@string/apply_promo_code_voucher"
+                                android:textColor="@color/txt_black"
+                                android:textSize="@dimen/_10sdp" />
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_190sdp"
+                        android:layout_below="@id/cart_shipping_details"
+                        android:layout_marginTop="@dimen/_8sdp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:orientation="vertical">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/galano_grotesque_semi_bold"
+                                android:padding="@dimen/_10sdp"
+                                android:text="@string/price_details"
+                                android:textColor="@color/txt_black"
+                                android:textSize="@dimen/_13sdp"
+                                android:visibility="gone" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingStart="@dimen/_15sdp"
+                                android:paddingEnd="@dimen/_15sdp"
+                                android:visibility="gone">
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/galano_grotesque_regular"
+                                    android:text="@string/total"
+                                    android:textColor="@color/txt_black"
+                                    android:textSize="@dimen/_11sdp" />
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/tv_charges"
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/galano_grotesque_regular"
+                                    android:textColor="@color/txt_black"
+                                    android:textSize="@dimen/_11sdp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingStart="@dimen/_15sdp"
+                                android:paddingTop="@dimen/_15sdp"
+                                android:paddingEnd="@dimen/_15sdp"
+                                android:visibility="gone">
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/galano_grotesque_regular"
+                                    android:text="@string/total_mrp"
+                                    android:textColor="@color/txt_black"
+                                    android:textSize="@dimen/_11sdp" />
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/tv_total_mrp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/galano_grotesque_regular"
+                                    android:text=""
+                                    android:textColor="@color/txt_black"
+                                    android:textSize="@dimen/_11sdp" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/txt_light_gray" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="@dimen/_15sdp">
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/galano_grotesque_bold"
+                                    android:text="@string/total_amount"
+                                    android:textColor="@color/txt_black"
+                                    android:textSize="@dimen/_11sdp" />
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/tv_total"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/galano_grotesque_bold"
+                                    android:text=""
+                                    android:textColor="@color/txt_black"
+                                    android:textSize="@dimen/_11sdp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+        </LinearLayout>
+
+        <!--        <RelativeLayout-->
+        <!--            android:id="@+id/tv_checkout"-->
+        <!--            android:layout_width="@dimen/_220sdp"-->
+        <!--            android:layout_height="@dimen/_44sdp"-->
+        <!--            android:layout_alignParentBottom="true"-->
+        <!--            android:layout_centerHorizontal="true"-->
+        <!--            android:background="@drawable/googlepay_button_no_shadow_background"-->
+        <!--            android:clickable="true"-->
+        <!--            android:contentDescription="@string/googlepay_button_content_description"-->
+        <!--            android:focusable="true"-->
+        <!--            android:paddingTop="2sp">-->
+
+        <!--            <LinearLayout-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="match_parent"-->
+        <!--                android:duplicateParentState="true"-->
+        <!--                android:gravity="center_vertical"-->
+        <!--                android:orientation="vertical"-->
+        <!--                android:weightSum="2">-->
+
+        <!--                <ImageView-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="0dp"-->
+        <!--                    android:layout_weight="1"-->
+        <!--                    android:duplicateParentState="true"-->
+        <!--                    android:scaleType="fitCenter"-->
+        <!--                    android:src="@drawable/buy_with_googlepay_button_content" />-->
+        <!--            </LinearLayout>-->
+
+        <!--            <ImageView-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="match_parent"-->
+        <!--                android:duplicateParentState="true"-->
+        <!--                android:scaleType="fitXY"-->
+        <!--                android:src="@drawable/googlepay_button_overlay" />-->
+
+        <!--        </RelativeLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_payment_note"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:fontFamily="@font/galano_grotesque_regular"
+                android:lineSpacingExtra="1.2dp"
+                android:text="@string/cart_payment_notice_text"
+                android:textColor="@color/txt_black"
+                android:textSize="@dimen/_13sdp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_checkout"
+                android:layout_width="@dimen/_220sdp"
+                android:layout_height="@dimen/_44sdp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@drawable/ic_buy_button"
+                android:fontFamily="@font/galano_grotesque_semi_bold"
+                android:gravity="center"
+                android:text="@string/checkout"
+                android:textColor="@color/White"
+                android:textSize="@dimen/_14sdp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_empty_place_holder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:visibility="gone">
+
+            <include
+                android:id="@+id/include_empty_place_holder"
+                layout="@layout/layout_empty_place_holder" />
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

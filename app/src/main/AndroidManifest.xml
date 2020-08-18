@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.taghawk">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <uses-feature
+        android:name="android.hardware.camera2"
+        android:required="false" />
+
+    <application
+        android:name=".TagHawkApplication"
+        android:allowBackup="false"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:allowBackup">
+        <activity android:name=".ui.setting.payment_details.PayoutDetailsActivity"></activity>
+        <activity
+            android:name=".bluesnap.BlueSnapPaymentCardActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Jointag.Jointag" />
+        <activity android:name=".Video_youtube.VideoScreen" />
+        <activity android:name=".JoinYourCommunitires.JoinYourCommunitires" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider" />
+        </provider>
+
+        <activity
+            android:name=".countrypicker.CountryCodeSelectionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".gallery_picker.ImagesGallery"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.onboard.OnBoardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.home.HomeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.onboard.login.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.walkthrough.WalkThroughActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.home.category.CategoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.home.search.SearchAcivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|stateHidden" />
+        <activity
+            android:name=".ui.home.product_details.ProductDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.splash.SplashActivity"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="taghawkdev.appskeeper.com"
+                    android:scheme="http" />
+                <data
+                    android:host="taghawkstg.appskeeper.com"
+                    android:scheme="http" />
+                <data
+                    android:host="api.taghawk.app"
+                    android:scheme="https" />
+            </intent-filter>
+
+            <!-- Branch URI Scheme -->
+            <intent-filter>
+                <data
+                    android:host="open"
+                    android:scheme="com.taghawk" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+
+            <!-- Branch App Links (optional) -->
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="example.app.link"
+                    android:scheme="https" />
+                <!-- example-alternate domain is required for App Links when the Journeys/Web SDK and Deepviews are used inside your website. -->
+                <data
+                    android:host="example-alternate.app.link"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity> <!-- Branch init -->
+        <meta-data
+            android:name="io.branch.sdk.BranchKey"
+            android:value="key_live_edQPu4fKVhnzIFKwGW7Piklcuzn80Hi9" /> <!-- <meta-data android:name="io.branch.sdk.BranchKey.test" android:value="key_test_dlVPv9iJNdlyQvKzQ95KphogCBg3YNbR" /> -->
+        <meta-data
+            android:name="io.branch.sdk.TestMode"
+            android:value="false" /> <!-- Set to true to use Branch_Test_Key (useful when simulating installs and/or switching between debug and production flavors) -->
+        <activity
+            android:name=".ui.home.filter.ChoosseLocationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.home.filter.FilterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.home.tabs.ClusterItemsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.home.filter.TagFilterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.home.ZoomImageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.tag.TagDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.create.AddProductActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.create.ProductPreviewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".camera2basic.CameraTwoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.chat.MessagesDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateUnchanged" />
+        <activity
+            android:name=".ui.create.FeturedPostActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.tag.AddTagActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.home.EditProductActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.cart.CartActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".gallery.GalleryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.tag.EditTagActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.profile.OtherProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.follow_follower.FollowFollowerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.review_rating.ReviewRatingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".stripe.GooglePayPayment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.setting.payment_details.PaymentDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.setting.SettingActvity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.setting.change_password.ChangePasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.home.product_details.MapFullScreenActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.shipping.ShippingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.setting.block_user.BlockUserActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.setting.html_content_view.HtmlContentViewAvtivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.chat.GroupDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.tag.ProductViewAllActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.chat.PendingRequestsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.home.product_details.MyProductsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.tag.MyTagsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.chat.SearchChatActivity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".firebase.MyFirebaseMessagingService"
+            android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAmqGtN6ha9GiRYEPCcN9Oj6gK62DdAfSs" />
+        <meta-data
+            android:name="com.google.android.gms.wallet.api.enabled"
+            android:value="true" />
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="barcode, face"
+            tools:replace="android:value" />
+
+        <activity
+            android:name="com.jumio.nv.NetverifyActivity"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:hardwareAccelerated="true"
+            android:theme="@style/Theme.Netverify"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ui.profile.ProfileEditActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.home.search.SearchTagShelfAcivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.gift.GiftRewardPromotionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.setting.ReferalActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.chat.GroupMembersActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.setting.payment_details.FragmentDepositMoneyActivity" />
+        <activity android:name=".ui.setting.payment_details.AddAccountActivity" />
+        <activity android:name=".ui.setting.payment_details.AddDebitCardActivity" />
+        <activity android:name=".ui.profile.AddUpdateAddressActivity" />
+    </application>
+
+</manifest>

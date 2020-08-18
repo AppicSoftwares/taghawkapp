@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorAccent"
+    tools:context=".Video_youtube.VideoScreen">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardheader"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="@color/colorAccent"
+        app:cardUseCompatPadding="false">
+
+        <ImageView
+            android:id="@+id/ivback"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="15dp"
+            android:tint="#fff"
+            android:src="@drawable/ic_back_black" />
+    </androidx.cardview.widget.CardView>
+    <WebView
+      android:layout_centerInParent="true"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200sdp"/>
+</RelativeLayout>

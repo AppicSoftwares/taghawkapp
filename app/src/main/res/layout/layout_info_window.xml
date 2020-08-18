@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/ll_main"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_80sdp">
+
+        <RelativeLayout
+            android:id="@+id/rl_base_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ic_map_pin"
+                android:layout_width="@dimen/_36sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_map_pin" />
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/iv_tag"
+                android:layout_width="@dimen/_32sdp"
+                android:layout_height="@dimen/_32sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_5sdp"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="2dp" />
+
+
+            <TextView
+                android:id="@+id/tv_tag_total_members"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:fontFamily="@font/galano_grotesque_medium"
+                android:text=""
+                android:textColor="@color/txt_light_gray"
+                android:textSize="@dimen/_10ssp"
+                android:visibility="gone" />
+
+
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_tag_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_base_container"
+            android:ellipsize="end"
+            android:lines="2"
+            android:text=""
+            android:textColor="@color/txt_black"
+            android:textSize="@dimen/_12ssp"
+            android:visibility="visible" />
+    </RelativeLayout>
+</layout>

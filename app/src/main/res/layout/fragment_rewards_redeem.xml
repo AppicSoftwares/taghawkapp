@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/White"
+        android:orientation="vertical">
+
+
+        <include
+            android:id="@+id/include_header"
+            layout="@layout/layout_header" />
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/include_header">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/_48sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="14dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <include
+                            android:id="@+id/include_promotion"
+                            layout="@layout/adapter_rewards_promotion_type_view" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/_10sdp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/galano_grotesque_medium"
+                                android:text="@string/total"
+                                android:textColor="@color/txt_black"
+                                android:textSize="@dimen/_12sdp" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tv_rewards_points"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/galano_grotesque_extra_bold"
+                                android:text="400 Points"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="@dimen/_20sdp" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:background="@drawable/dotted_line" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="14dp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:fontFamily="@font/galano_grotesque_regular"
+                                android:textColor="@color/txt_light_gray"
+                                android:textSize="@dimen/_12sdp"
+                                tools:text="280 points remaining" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:fontFamily="@font/galano_grotesque_medium"
+                        android:text="@string/select_the_items_you_want_to_promote"
+                        android:textColor="@color/txt_black"
+                        android:textSize="@dimen/_15sdp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rv_products"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp" />
+
+                        <LinearLayout
+                            android:id="@+id/tv_no_data"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android:layout_marginBottom="@dimen/_20sdp"
+                            android:orientation="vertical"
+                            android:padding="@dimen/_15sdp"
+                            android:visibility="visible">
+
+                            <include
+                                android:id="@+id/include_empty"
+                                layout="@layout/layout_empty_place_holder" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_redeem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/ic_reward_button"
+            android:fontFamily="@font/galano_grotesque_semi_bold"
+            android:gravity="center"
+            android:scaleType="fitXY"
+            android:text="@string/redeem"
+            android:textColor="@color/White"
+            android:textSize="@dimen/_14sdp" />
+    </RelativeLayout>
+
+</layout>

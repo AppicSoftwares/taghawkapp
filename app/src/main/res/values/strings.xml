@@ -1,0 +1,938 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="app_name">TagHawk</string>
+    <string name="no_internet">No internet</string>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="retry">Retry</string>
+    <string name="crash_toast_text">Oops ! App crashed, but a report has been sent to  developers to help fix the issue !</string>
+    <string name="h_fname">* Enter First Name</string>
+    <string name="h_lname">* Enter Last Name</string>
+    <string name="h_mname">Enter Middle Name</string>
+    <string name="h_email">* Enter Email ID</string>
+    <string name="email_invalid_val">Please enter the valid email id</string>
+    <string name="h_password">* Enter Password</string>
+    <string name="h_password_lenght">Password must be minimum 6 characters length</string>
+    <string name="v_gender">Please select gender</string>
+    <string name="v_postal">Please enter the valid postal code</string>
+    <string name="v_number">Please enter the valid phone number</string>
+    <string name="h_gender">* Enter Male / Female</string>
+    <string name="h_dob">* Enter DOB (mm/dd/yyyy)</string>
+    <string name="h_bio">Enter Biography</string>
+    <string name="h_username">Enter Username</string>
+    <string name="h_age">Enter Age</string>
+    <string name="h_number">Enter Number</string>
+    <string name="h_number_length">Enter 10 digit Number</string>
+    <string name="phone_invalid_val">Please enter the valid phone numner</string>
+    <string name="h_c_code">Enter Country Code</string>
+    <string name="h_city">Enter City</string>
+    <string name="h_postcal_code">Enter Postal Code</string>
+    <string name="h_region">Enter Region</string>
+    <string name="signup">Sign Up</string>
+    <string name="clipboard_copied">Copied to clipboard!!</string>
+    <string name="invite_code">Invite code</string>
+    <string name="Submit">Submit</string>
+    <string name="old_pass">Old Password</string>
+    <string name="new_pass">New Password</string>
+    <string name="confirm_pass">Confirm Password</string>
+    <string name="please_enter_old_pass">Please enter your old password</string>
+    <string name="new_valid">Please Enter New Password</string>
+    <string name="confirm_valid">Please Enter Confirm Password</string>
+    <string name="match">Old password and new password doesn\'t match</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login_success">You are successfully logged in</string>
+
+    <string name="enter_email">Please enter your email</string>
+    <string name="enter_valid_email">Please enter valid email address</string>
+    <string name="enter_password">Please enter your password</string>
+    <string name="enter_new_password">Please enter new password</string>
+    <string name="enter_old_password">Please enter old password</string>
+    <string name="enter_valid_password">Password must be minimum 6 characters</string>
+
+    <string name="reset_password_link_sent">Reset password link sent to your email id</string>
+    <string name="password_reset_success">Password reset successfully</string>
+    <string name="new_password_empty">Please enter new password</string>
+    <string name="confirm_password_empty">Please confirm password</string>
+    <string name="password_not_matched"><![CDATA[New Password & Confirm Password are not same]]></string>
+    <string name="enter_from_price">Please enter from price range</string>
+
+    <string name="select_location">Please select location</string>
+    <string name="enter_to_price">Please enter to price range</string>
+
+    <string name="enter_from_greater_price">Price range \'To\' should be greater then \'From\'</string>
+
+
+    <string name="enter_phone">Please enter your number</string>
+    <string name="enter_valid_phone">Please enter valid number</string>
+    <string name="log_out_success">You are logged out successfully</string>
+    <string name="password_changed_success">Password changed successfully</string>
+
+    <string name="choose_your_role">Choose your role &amp; start with TagHawk</string>
+    <string name="customer">Customer</string>
+    <string name="let_s_start">Let’s Start</string>
+    <string name="hawk_driver">Hawk Driver</string>
+    <string name="moving_company">Moving Company</string>
+    <string name="login_for_more_functions">Login for more functions!</string>
+    <string name="email">Email Id*</string>
+    <string name="password">Password*</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="login">Login</string>
+    <string name="connect_with_facebool">Connect with Facebook</string>
+    <string name="i_m_a_new_user_sign_up">I’m a new user, Sign Up</string>
+    <string name="explore_as_guest">Explore as Guest</string>
+    <string name="let_s_start_with_register">Let’s start with Register!</string>
+    <string name="full_name">Full Name*</string>
+    <string name="email_id_mandatory">Email ID*</string>
+    <string name="password_mandatory">Password*</string>
+    <string name="i_m_already_a_member">I’m already a member, Login</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="enter_name">Please enter your fullname</string>
+    <string name="enter_first_name">Please enter your first name</string>
+    <string name="enter_valid_name">Please enter valid fullname</string>
+    <string name="enter_valid_first_name">Please enter valid first name</string>
+    <string name="enter_last_name">Please enter valid last name</string>
+    <string name="enter_valid_last_name">Please enter valid last name</string>
+    <string name="facebook_app_id">446906379222664</string>
+    <string name="email_required">Email Required</string>
+    <string name="enter_email_id">Enter Email Id</string>
+    <string name="ok">OK</string>
+    <string name="cancel">CANCEL</string>
+    <string name="cancel_lowercase">Cancel</string>
+
+    <string name="no_category_found_please_try_again_later">No Category found,Please try again later.</string>
+    <string name="categories">Categories</string>
+    <string name="truble_in_loging">Trouble logging in!</string>
+    <string name="please_enter_your_registered_email_id_you_will_receive_a_link_to_create_a_new_password">Please enter your registered email ID.\n You will receive a link to create a\n new password</string>
+    <string name="resend_link">Send Reset Link</string>
+    <string name="successfully">Successfully!</string>
+    <string name="success">Success!</string>
+    <string name="info_">Info</string>
+    <string name="verification_status">Verification Status</string>
+    <string name="a_link_has_been_sent_to_your_registered_email_id">A link has been sent to your registered email ID.</string>
+    <string name="reset_password">Reset Password!</string>
+    <string name="please_enter_your_new_password_followed_n_by_the_confirm_same">Please enter your new password followed  by the confirm same</string>
+    <string name="please_enter_your_old_password_followed_n_by_the_confirm_same">Please enter your old and new password</string>
+    <string name="filter">Filter</string>
+    <string name="reset">Reset</string>
+    <string name="set_location">Set Location</string>
+    <string name="location">Location</string>
+    <string name="product_location">Product Location</string>
+    <string name="distance">Distance (in Miles)</string>
+    <string name="price_range">Price Range</string>
+    <string name="from">From</string>
+    <string name="select">Select</string>
+    <string name="posted_within">Posted Within</string>
+    <string name="conditions">Conditions</string>
+    <string name="condition">Condition</string>
+    <string name="condition_">Condition*</string>
+
+    <string name="new_never_used">New (never used)</string>
+    <string name="like_new_rarely_used">Like New (rarely used)</string>
+    <string name="good_gently_used">Good (gently used)</string>
+    <string name="normal_normal_wear">Normal (normal wear)</string>
+    <string name="flawed_with_flaw">Flawed (with flaw)</string>
+    <string name="seller_rate">Seller Rate</string>
+    <string name="rate_seller">Rate Seller</string>
+    <string name="seller">Seller</string>
+    <string name="under_development">Under Development</string>
+    <string name="tags">Tags</string>
+    <string name="items">Items</string>
+    <string name="all">All</string>
+    <string name="search">   Search in All</string>
+    <string name="search_all_cat">   Search in All Categories</string>
+    <string name="search_in">Search in </string>
+    <string name="no_data_found">No results found</string>
+    <string name="no_data_found_">We couldn\'t find anything that matches your search</string>
+    <string name="similar_items">Similar Items</string>
+    <string name="chat">Chat</string>
+    <string name="buy_now">Buy Now</string>
+    <string name="just_now">Right now</string>
+    <string name="a_min_ago">1 minute ago</string>
+    <string name="mins_ago">" minutes ago"</string>
+    <string name="a_hour_ago">1 hour ago</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="days_ago">" days ago"</string>
+    <string name="week_ago">" week ago"</string>
+    <string name="weeks_ago">" weeks ago"</string>
+
+
+    <string name="month_ago">" month ago"</string>
+    <string name="months_ago">" months ago"</string>
+    <string name="year_ago">" year ago"</string>
+    <string name="skip">Skip</string>
+    <string name="next">Next</string>
+    <string name="sell_amp_buy_products"><![CDATA[Sell & Buy Products!]]></string>
+    <string name="never_ever_think_of_giving_up_winners_never_quit_and_quitters_never_win">Never ever think of giving up. Winners never quit and quitters never win.</string>
+    <string name="lets_hawk">Let\'s Hawk</string>
+    <string name="verified_seller_only">Verified Seller Only</string>
+    <string name="choose_location">Choose Location</string>
+    <string name="please_enter_your_place">Please enter your place</string>
+    <string name="to">To</string>
+    <string name="apply">Apply</string>
+    <string name="unable_to_fatch_your_location">Unable to fetch your location</string>
+    <string name="your_location_distance">Your location distance: </string>
+    <string name="member_since">Member Since:</string>
+    <string name="follower">Follower:</string>
+    <string name="posted">Posted </string>
+    <string name="your_location">Your location distance:</string>
+    <string name="report_product">Report Product</string>
+    <string name="select_your_reason_why_are_you_reporting_this_product">Why are you reporting this product?</string>
+    <string name="product_already_sold">Offensive or Inappropriate Content</string>
+    <string name="seller_not_reponding">Offline Payment Request</string>
+    <string name="ad_is_duplicate">Product already sold</string>
+    <string name="wrong_category">Duplicate post</string>
+    <string name="offensive_content">Wrong Category</string>
+    <string name="might_be_scam">Might be Scam</string>
+    <string name="other">Others</string>
+    <string name="report">Report</string>
+    <string name="cencel">Cancel</string>
+    <string name="please_select_reason">Please select reason</string>
+    <string name="please_enter_reason">Please enter reason</string>
+    <string name="share">Share</string>
+    <string name="profile_share">Profile Share</string>
+    <string name="share_msg">Would you like to share this product</string>
+    <string name="newest">Newest</string>
+    <string name="closest">Closest</string>
+    <string name="price_high_to_low">Price: High To Low</string>
+    <string name="price_low_to_high">Price: Low To High</string>
+    <string name="members">Members</string>
+    <string name="today">24 Hours</string>
+    <string name="this_week">One Week</string>
+    <string name="this_month">One month</string>
+    <string name="this_year">One year</string>
+    <string name="last_threee_month">Last 3 months</string>
+    <string name="public_txt">Public</string>
+    <string name="private_txt">Private</string>
+    <string name="tag_type">Tag Type</string>
+    <string name="tag_type_asterisk">Tag Type*</string>
+    <string name="join">Join</string>
+    <string name="view_details">View Details</string>
+    <string name="founder">Founder:</string>
+    <string name="tag_owner">Tag Owner</string>
+    <string name="shelf">Shelf</string>
+    <string name="view_all">View All</string>
+    <string name="share_tag">TagHawk Share Tag</string>
+    <string name="add_image">Add Image*</string>
+    <string name="title">Title*</string>
+    <string name="product_catgroy">Product Category*</string>
+    <string name="price">Price</string>
+    <string name="price_">Price*</string>
+    <string name="description">Description</string>
+    <string name="description_">Description*</string>
+    <string name="shipping_availability">Availability Options*</string>
+    <string name="share_to_community">Share to Tag</string>
+    <string name="preview">Preview</string>
+    <string name="pickup">Pickup</string>
+    <string name="deliver">Delivery</string>
+    <string name="deliver_">Deliver</string>
+    <string name="shipping">FedEx</string>
+    <string name="shipping_title">Shipping</string>
+    <string name="firm_price">Firm Price</string>
+    <string name="add_product">Add Product</string>
+    <string name="edit_product">Edit Product</string>
+    <string name="please_enter_product_title">Please enter product Title</string>
+    <string name="please_enter_product_category">Please enter product Category</string>
+    <string name="please_enter_product_price">Please enter product price</string>
+    <string name="please_enter_routing_num">Please enter routing number</string>
+    <string name="please_enter_account_num">Please enter account number</string>
+    <string name="please_enter_verify_routing_num">Please enter verify routing number</string>
+    <string name="please_enter_verify_account_num">Please enter verify account number</string>
+    <string name="routing_num_verify_routing_mismatch">Verify routing number mismatch</string>
+    <string name="routing_num_verify_account_mismatch">Verify account number mismatch</string>
+
+    <string name="price_should_grater_then_zeo">Product price must be greater than or equal to $0.80 Free item can be priced at $0 </string>
+    <string name="please_select_shipping_type">Please select shipping type</string>
+    <string name="please_enter_description">Please enter description</string>
+    <string name="please_select_weight">Please select weight for your product</string>
+    <string name="shipping_is_not_avaliable_for_price_0_product">Shipping is not available for product price 0.</string>
+    <string name="please_select_shipping_mode">Please select shipping mode</string>
+    <string name="selected_weight_is_not_available">Selected weight is not available with selected shipping mode.</string>
+
+
+    <string name="please_select_location">Please select location</string>
+    <string name="please_upload_product_image">Please upload product images</string>
+    <string name="please_upload_tag_image">Please upload tag image</string>
+    <string name="please_upload_document_image">Please select document image</string>
+    <string name="please_enter_tag_title">Please enter tag Title</string>
+    <string name="please_enter_tag_type">Please enter tag Type</string>
+    <string name="please_select_tag_verfication_method">Please select tag verification method</string>
+    <string name="please_enter_tag_description">Please enter tag description text</string>
+    <string name="please_enter_tag_description_min_text">Minimum three characters are required for description</string>
+    <string name="please_select_your_location">Please select your location</string>
+    <string name="please_enter_tag_email_domain">Please enter tag email domain</string>
+    <string name="please_enter_tag_email_domain_valid">Please enter a valid email domain</string>
+    <string name="please_enter_tag_password">Please enter tag document information</string>
+    <string name="minimum_6_character">Your password must be of minimum six character</string>
+    <string name="please_enter_tag_document_info">Please enter document information</string>
+    <string name="city_name_not_available">City name not available for location, Please choose other</string>
+
+    <string name="post">Post</string>
+    <string name="select_category">Select Category</string>
+    <string name="share_to_tags">Share to tags:</string>
+    <string name="all_member">All Members</string>
+    <string name="above_10_members">Above 10 members</string>
+    <string name="above_50_members">Above 50 members</string>
+    <string name="above_100_members">Above 100 members</string>
+    <string name="above_500_members">Above 500 members</string>
+    <string name="above_1000_members">Above 1000 members</string>
+    <string name="max_camera_image_picking">You can upload maximum 10 images if you wan\'t to upload more then remove any one of them.</string>
+    <string name="your_product_has_been_posted">Your product has been posted</string>
+    <string name="sell_faster">Sell Faster</string>
+    <string name="get_10_more_views_than_other_by_promoting">Get* 10 more views than other by promoting</string>
+    <string name="your_product">your product.</string>
+    <string name="promote_in_tag_shelf_as_well_1_each">Promote in tag shelf as well ($1/each)</string>
+    <string name="share_item">Share Item</string>
+    <string name="post_another">Post Another</string>
+    <string name="_3_99">$1.99</string>
+    <string name="_699">$3.99</string>
+    <string name="_9_99">$6.99</string>
+    <string name="_1_day">1 Day</string>
+    <string name="_3_day">3 Day</string>
+    <string name="_7_day">7 Day</string>
+    <string name="done">DONE</string>
+    <string name="congratulations_title">Congratulations!</string>
+    <string name="payment_declined">Payment Declined</string>
+    <string name="payment_declined_message">Your payment is declined. Please try another payment method or contact support@taghawk.app for further assistance.</string>
+    <string name="card_error">Card Error</string>
+    <string name="transaction_failed">Transaction Failed</string>
+    <string name="card_error_info">Your card info is invalid. Please check the information or try another card.\nIf you have any questions, please email support@taghawk.app</string>
+    <string name="user_details_error_info">Your user info is invalid. Please check the information or try another card.\nIf you have any questions, please email support@taghawk.app</string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="upload_logo">Upload Tag Image*</string>
+    <string name="upload_jpg_png_file"><![CDATA[Upload jpg & png file only]]></string>
+    <string name="tag_name">Tag Name*</string>
+    <string name="tag_type_">Tag Entrance*</string>
+    <string name="tag_enteance">Tag Entrance</string>
+    <string name="write_here">Write here</string>
+    <string name="points_charged">Points Charged</string>
+    <string name="add_details">Create Your Tag</string>
+    <string name="toolbar_h_refer_friend">Refer Your Friend</string>
+
+    <string name="hint_tag_name">Tag Name</string>
+    <string name="hundred_points_charged">You can create a tag in either way:\n
+• Redeem 4000 reward referral points\n
+• Or Pay $300\n
+You can own only 1 tag at the same time.
+</string>
+    <string name="option_email">Email</string>
+    <string name="option_password">Password</string>
+    <string name="option_document">Document</string>
+    <string name="tag_verification_email">Request Email Domain to Join the Tag</string>
+    <string name="please_enter_password">Please enter password</string>
+    <string name="please_enter_document_info">Please enter document information</string>
+    <string name="refer_to_friend">Refer Your Neighbours</string>
+    <string name="loreum_lipsium">Invite your neighbors to join the tag and start selling with you!</string>
+    <string name="apply_community">Apply Community</string>
+    <string name="apply_email">You are applying for TAGNAME. Please enter your email.</string>
+    <string name="apply_password">You are applying for TAGNAME. Please enter your password.</string>
+    <string name="enter_password_short">Enter Password</string>
+    <string name="apply_documents">You are applying for TAGNAME. Please upload documents.</string>
+    <string name="become_verify_seller">Become A Verified Seller</string>
+    <string name="select_your_document_to_verify_your_identity">Select your document to verify your identity</string>
+    <string name="uplaod_document">Upload Documents</string>
+    <string name="tag_name_pattern">TAGNAME</string>
+    <string name="followers">Followers</string>
+    <string name="complete">Complete</string>
+    <string name="payment_pending">Payment pending</string>
+    <string name="dispute">Dispute</string>
+    <string name="decline_refund">Decline Refund</string>
+    <string name="item_received">Item Received</string>
+    <string name="edit">Edit</string>
+    <string name="tag_edit">Edit Tag</string>
+    <string name="promote">Promote</string>
+    <string name="delete">Delete</string>
+    <string name="update">Update</string>
+    <string name="apply_promo_code_voucher">Apply Promo Code/Voucher</string>
+    <string name="price_details">Price Detail</string>
+    <string name="total_mrp">Total MRP</string>
+    <string name="shipping_charges">Shipping Charges</string>
+
+    <string name="coupon_discount">Coupon Discount</string>
+    <string name="checkout">Checkout</string>
+    <string name="continue_">Continue</string>
+    <string name="oops_it_s_empty">Oops! It’s Empty</string>
+    <string name="oops">Oops!</string>
+    <string name="cart">Cart</string>
+    <string name="cart_delete_msg">Are you sure you want to remove this item from cart?</string>
+    <string name="remove_item">Remove Item</string>
+    <string name="cart_msg">There are no products available in your cart.</string>
+    <string name="delete_product">Delete Product</string>
+    <string name="product_delete_msg">Are you sure you want to delete this product?</string>
+    <string name="replace_cart_item">Replace Items In Cart</string>
+    <string name="already_exist">Already Exist</string>
+    <string name="replce_msg_cart">your cart contains items from different seller,Would you like to reset your cart?
+    </string>
+    <string name="replace">Replace</string>
+    <string name="check_cart">Check Cart</string>
+    <string name="shop_more">Shop More</string>
+    <string name="max_images_from_gallery">cannot select more than 10 media files</string>
+    <string name="gallery">Gallery</string>
+    <string name="tab_selling">Selling</string>
+    <string name="tab_sold">Sold</string>
+    <string name="tab_saved">Saved</string>
+    <string name="verify_account">Verify Account</string>
+    <string name="facebook">Facebook</string>
+    <string name="fb_info">Sign up with Facebook</string>
+    <string name="verify">Verify</string>
+    <string name="email_edit">Email</string>
+    <string name="phone">Phone</string>
+    <string name="billing_address">Billing Address</string>
+    <string name="document">Official ID</string>
+    <string name="verfied">Verified</string>
+    <string name="edit_profile_id">Verify Official ID!</string>
+    <string name="edit_profile_document">Verify your official ID to become a verified seller. Please upload documents.</string>
+    <string name="done_lowercase">Done</string>
+    <string name="verify_phone_number">Verify Phone Number!</string>
+    <string name="verify_your_number_to_become_a_verified_seller_please_enter_your_phone_number">Verify your number to become a verified seller. Please enter your phone number.</string>
+    <string name="enter_phone_number">Enter Phone Number</string>
+    <string name="email_verification_edit">Verify your email to become a verified seller. Please enter your email.</string>
+    <string name="verify_email">Verify Email!</string>
+    <string name="select_country">Select Country</string>
+
+    <string name="permission_req_msg"><![CDATA[Please turn on permissions at [Setting] > [Permission]]]></string>
+
+    <string name="permisssion_required">Permission required</string>
+    <string name="product_empty_msg">There are no products available under   this category now.</string>
+    <string name="product_empty_msg_">There are no products available in selling.</string>
+    <string name="product_empty_msg_saved">There are no products available in saved.</string>
+    <string name="product_empty_msg_sold">There are no products available in sold.</string>
+
+    <string name="product_empty_msg_for_promotion">There are no products available for promotion.</string>
+    <string name="please_again_later">Something went wrong,Please try again later.</string>
+    <string name="sammy_jay_has_responded_to_your_bid">Sammy Jay has responded to your bid.</string>
+    <string name="verify_phone_number_and_official_id_to_become_a_verified_seller">Verify Phone Number and Official ID to become a verified seller</string>
+    <string name="click_here_to_verify">Click here to verify</string>
+    <string name="messages">Messages</string>
+    <string name="notifications">Notifications</string>
+    <string name="pinned_chats">Pinned Chats</string>
+    <string name="open_chats">Open Chats</string>
+    <string name="write_your_message">Write your Message</string>
+    <string name="pin_on_top">Pin on top</string>
+    <string name="delete_chat">Delete chat</string>
+    <string name="block_user">Block user</string>
+
+    <string name="please_enter_phone_number">Please enter phone number</string>
+    <string name="please_select_address_type">Please select address type</string>
+    <string name="notification">Notification</string>
+    <string name="no_notification">No notification right now! We will send   you notifications if something important.</string>
+    <string name="invitation_code">Invitation Code</string>
+    <string name="invitation_code_optional">Invitation Code(Optional)</string>
+    <string name="invalid">Invalid</string>
+    <string name="logout_msg">You are logged in different device, Please logout and login again.</string>
+    <string name="logout">Logout</string>
+    <string name="add">Add</string>
+    <string name="guest_msg">You are logged in as guest, Please signup or login</string>
+    <string name="access_denied">Access Denied</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="promoted">Promoted</string>
+    <string name="profile">Profile</string>
+    <string name="follow">Follow</string>
+    <string name="following">Following</string>
+    <string name="unfollow">Unfollow</string>
+    <string name="unfollow_meg">Are you sure to unfollow</string>
+    <string name="remove">Remove</string>
+    <string name="follower_remove_msg">they were removed from your followers.</string>
+    <string name="remove_title">TagHawk won\'t tell</string>
+    <string name="remove_follower">Remove Follower?</string>
+    <string name="reply">Reply</string>
+    <string name="edited_at">Edited</string>
+    <string name="reviews">Reviews</string>
+    <string name="enter_some_message">Enter some message</string>
+    <string name="send_a_message_to_start_chatting">Send a message to start chatting.</string>
+    <string name="mute_chat">Mute chat</string>
+    <string name="unmute_chat">Unmute chat</string>
+    <string name="are_you_sure_you_want_to_delete_chat_with">Are you sure you want delete chat with</string>
+    <string name="no_chats_available_in_the_inbox">No chats available in the inbox.</string>
+    <!--<string name="rate_seller">Rate Seller</string>-->
+    <string name="send">Send</string>
+    <string name="feedback">Feedback</string>
+    <string name="write">Write....</string>
+    <string name="would_you_like_to_rate">Would you like to Rate</string>
+    <string name="for_product">for product</string>
+    <string name="rate">Rate</string>
+    <string name="please_select_rating">Please select Rating.</string>
+    <string name="rate_the_sellet">Rate the seller</string>
+    <string name="would_you_like_to_share_your_feedback_later">Would you like to share your feedback later?</string>
+    <string name="later">Later</string>
+    <string name="block">Block</string>
+    <string name="block_msg">won\'t be able to find your profile, products on TagHawk.</string>
+    <string name="otp_verify">OTP Verify</string>
+    <string name="sent_an_image">Sent an image.</string>
+    <string name="switches_the_topic_to_item">switches the topic to item</string>
+    <string name="negotiable">Firm Price</string>
+    <string name="sold">Sold</string>
+    <string name="invalid_info">Invalid Info</string>
+    <string name="include_transaction_fee">Include transaction fee</string>
+    <string name="info">Transcation fee info</string>
+    <string name="transaction_cost_msg">This small fee helps us operate the platform and keep offering better services for you.\n\n
+
+Item value  \u0020\u0020  \u0020\u0020  \u0020\u0020 \u0020\u0020 \u0020\u0020Fee\n
+$0 \u0020\u0020 \u0020\u0020 \u0020\u0020 \u0020\u0020 \u0020\u0020 \u0020\u0020 \u0020\u0020 \u0020\u0020  \u0020\u0020                      0\n
+$0.8 - $10 \u0020\u0020 \u0020\u0020 \u0020\u0020\u0020 \u0020\u0020 \u0020$0.8\n
+\u0020\u0020>$10  \u0020\u0020 \u0020\u0020 \u0020\u0020 \u0020\u0020 \u0020\u0020 \u0020\u0020 \u0020\u0020 \u0020\u0020              $ 8%
+\n\n
+This fee is only deducted after you successfully sell your product.
+</string>
+
+    <string-array name="payout_verify_options">
+        <item>US Driving License</item>
+        <item>Passport</item>
+    </string-array>
+
+    <string name="first_name">First Name</string>
+    <string name="first_name_">First Name*</string>
+    <string name="last_name">Last Name</string>
+    <string name="last_name_">Last Name*</string>
+    <string name="date_of_birth">Date of Birth</string>
+    <string name="date_format">DD/MM/YYYY</string>
+    <string name="ssn">Last 4 digits of SSN</string>
+    <string name="account_balance">Account Balance</string>
+    <string name="deposit_pending">Deposit Pending</string>
+    <string name="account_number">Account Number</string>
+    <string name="deposit_account">Deposit Account</string>
+    <string name="routing_number">Routing Number</string>
+    <string name="verify_routing">Verify Routing</string>
+    <string name="account_holder_name">Bank Account Holder\'s Name</string>
+    <string name="enter_ssn">Enter SSN</string>
+    <string name="ssn_number">Social Security number</string>
+    <string name="ssn_msg">Please enter last 4 digits of your SSN</string>
+    <string name="payment_details">Payment details</string>
+    <string name="add_address">Add Address</string>
+    <string name="add_new_address">Add New Address</string>
+    <string name="your_addresses">Your Addresses</string>
+    <string name="edit_address">Edit Address</string>
+    <string name="address">Address</string>
+    <string name="add_bank_details">Add Deposit Account</string>
+    <string name="push_notifications">Push Notifications</string>
+    <string name="change_password">Change password</string>
+    <string name="change_password_msg">Change password</string>
+    <string name="block_users">Blocked Users</string>
+    <string name="register_as_hawkdriver">Register as Hawkdriver</string>
+    <string name="faq">FAQ</string>
+    <string name="terms_of_use">Terms of Use</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="setting">Settings</string>
+    <string name="hours_ago">hours ago</string>
+    <string name="years_ago">years ago</string>
+    <string name="exit_msg">Press once again to exit!</string>
+    <string name="continue_shopping">Continue Shopping</string>
+    <string name="verify_favebook">verify Facebook</string>
+    <string name="verify_ema">verify email address</string>
+    <string name="changepassword_msg">Your new password has been successfully update.</string>
+
+    <string name="please_Enter_full_name">Please enter full name.</string>
+    <string name="please_Enter_zip_code">Please enter zip code</string>
+    <string name="please_Enter_street_address">Please enter street address</string>
+    <string name="please_Enter_address_line">Please enter street address line 1</string>
+    <string name="please_Enter_address_line_two">Please enter street address line 2</string>
+    <string name="street_address_must_be_six_character">Street address must be atleast 6 characters</string>
+    <string name="address_line_must_be_six_character">Address line must be atleast 6 characters</string>
+    <string name="zip_code_must_be_5_digit">Zip code must be 5 digits</string>
+    <string name="city_can_not_be_empty">City can not be empty</string>
+    <string name="state_can_not_be_empty">State can not be empty</string>
+
+    <string name="Please_Enter_Account_Number">Please enter account number.</string>
+    <string name="Please_Verify_Your_Account_Number">Please verify your account number.</string>
+    <string name="Please_Enter_Valid_Account_Number">Please enter a valid account number.</string>
+    <string name="Verify_Account_Same_As_Account">Verify account number must be same as account number</string>
+    <string name="Please_Enter_Routing_Number">Please enter routing number.</string>
+    <string name="Please_Verify_Your_Routing_Number">Please verify your routing number.</string>
+    <string name="Please_Enter_Valid_Routing_Number">Please enter a valid routing number.</string>
+    <string name="Verify_Routing_Same_As_Routing">Verify routing number must be same as routing number</string>
+    <string name="please_enter_first_name">Please enter your first name</string>
+    <string name="please_enter_last_name">Please enter your last name</string>
+    <string name="please_enter_bank_name">Please enter your bank name</string>
+    <string name="pending">Pending</string>
+    <string name="street_address">Street Address*</string>
+    <string name="address_one">Address Line 1*</string>
+    <string name="address_line">Address Line 2</string>
+    <string name="apartment">Apartment</string>
+    <string name="apartments">Apartments</string>
+    <string name="room_number">Unit Number</string>
+    <string name="zip_code">Zip Code*</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="phon">Phone Number</string>
+    <string name="continue_to_review">Continue to Review</string>
+    <string name="you">You</string>
+    <string name="created_the_tag">created the tag</string>
+    <string name="more">more</string>
+    <string name="announcement">Announcement</string>
+    <string name="verification_method">Verification Method</string>
+    <string name="group_members">Group Members</string>
+    <string name="mute">Mute</string>
+    <string name="pending_requests">Pending Requests</string>
+    <string name="update_profile">Update Profile</string>
+    <string name="owner">Owner</string>
+    <string name="admin">Admin</string>
+    <string name="joined_the_tag">joined the tag</string>
+    <string name="removed_from_the_tag">removed from the tag.</string>
+    <string name="left_the_tag">left the tag</string>
+    <string name="view_profile">View Profile</string>
+    <string name="message">Message</string>
+    <string name="make_group_admin">Make Group Admin</string>
+    <string name="remove_as_group_admin">Remove as Group Admin</string>
+    <string name="unblock">Unblock</string>
+    <string name="shipping_detail">Shipping Detail:</string>
+    <string name="continue_to_payment">Continue to Payment</string>
+    <string name="total">Total</string>
+    <string name="choose_weight_for_your_product">Choose weight for your product* (pound)</string>
+    <string name="choose_weight">Choose weight</string>
+    <string name="you_will_receive_a_shipping_label_if_buyer_select_fedex">You will receive a shipping label if buyers select FedEx</string>
+    <string name="fedex">FedEx</string>
+    <string name="usps">USPS</string>
+    <string name="address_type">Address type*</string>
+    <string name="office">Office</string>
+    <string name="residential">Residential</string>
+    <string name="enter_email_domain_after">Enter email domain after @</string>
+    <string name="verification_type">Verifcation Type</string>
+    <string name="enter_password_to_join">Enter password to join</string>
+    <string name="enter_domain_first">Enter domain first</string>
+    <string name="enter_password_first">Enter password first</string>
+    <string name="exit">Exit</string>
+
+    <string name="delete_tag">Delete Tag</string>
+    <string name="exit_tag">Exit Tag</string>
+
+    <string name="are_you_sure_you_want_to_delete">Are you sure you want to delete</string>
+    <string name="are_you_sure_you_want_to_exit">Are you sure you want to exit</string>
+    <string name="please_enter_new_verification_password">Please enter new verification password</string>
+    <string name="please_enter_new_verification_email">Please enter new verification email</string>
+    <string name="no_results">No results</string>
+    <string name="transfer_ownership">Transfer Ownership</string>
+    <string name="unmute">Unmute</string>
+    <string name="are_you_sure_you_want_to_transfer_the_ownership_to">Are you sure you want to transfer the ownership to</string>
+    <string name="ownership_transfer_to">Ownership transfer to</string>
+    <string name="please_enter_new_tag_name">Please enter new tag name</string>
+    <string name="enter_tag_name">Enter tag name</string>
+    <string name="enter_tag_name_first">Enter tag name first</string>
+    <string name="please_enter_new_announcement">Please enter new annnouncement</string>
+    <string name="enter_announcement">Enter announcement</string>
+    <string name="enter_announcement_first">Enter announcement first</string>
+    <string name="uploading_failed">Uploading failed</string>
+    <string name="news">News</string>
+    <string name="text_today">Today</string>
+    <string name="enter_code">Enter Code</string>
+    <string name="enter_code_first">Enter code first</string>
+    <string name="enter_valid_code">Enter valid code</string>
+    <string name="tag">tag</string>
+    <string name="report_tag">Report Tag</string>
+    <string name="are_you_sure_you_want_to_report">Are you sure you want to report</string>
+    <string name="remove_member">Remove Member</string>
+    <string name="are_you_sure_you_want_to_remove">Are you sure you want to remove</string>
+    <string name="are_you_sure_you_want_to_block">Are you sure you want to block</string>
+    <string name="rewards_points">Rewards Points</string>
+    <string name="google_pay">Google Pay</string>
+    <string name="already_promoted">Already Promoted</string>
+    <string name="tag_shelf">Tag Shelf</string>
+    <string name="view_document">View Document</string>
+    <string name="sorry_you_can_t_send_messages_to_this_tag_as_you_are_muted_in_the_tag_by_owner">Sorry, you can\'t send messages as you are muted in the tag by owner.</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="share_product">Share Product</string>
+    <string name="share_community">Share Community</string>
+    <string name="the_file_you_picked_was_not_a_photo">The file you picked was not a photo</string>
+    <string name="please_enable_the_permissions_from_settings_to_access_this_feature">Please enable the permissions from Settings to access this feature.</string>
+    <string name="select_any_product_to_share">Select any product to share</string>
+    <string name="product_unavailable">Product unavailable</string>
+    <string name="my_products">My Products</string>
+    <string name="tag_unavailable">Tag unavailable</string>
+    <string name="send_a_message">send a message</string>
+    <string name="in">in</string>
+    <string name="please_select_payment_method">Please select payment method</string>
+    <string name="pay_using">Pay using</string>
+    <string name="service_fee">Service fee:-</string>
+    <string name="you_earn">You Earn:</string>
+    <string name="this_plateform_not_supported">This platform is not supported</string>
+    <string name="please_enter_new_description">Please enter new description</string>
+    <string name="enter_description">Enter description</string>
+    <string name="scan">Scan</string>
+    <string name="total_amount">Total Amount</string>
+    <string name="tag_description">Tag Description</string>
+    <string name="tag_description_to_public">Tag Description to Public</string>
+    <string name="tag_description_to_public_">Tag Description to Public*</string>
+    <string name="announcement_to_tag_members">Announcement to Tag Members</string>
+    <string name="announcement_to_tag_members_">Tag Announcement to Tag Members*</string>
+    <string name="cash_out">Cash Out</string>
+    <string name="view_tag">View Tag</string>
+    <string name="shared_a_tag">Shared a tag</string>
+    <string name="shared_a_product">Shared a product</string>
+    <string name="cash_out_msg">Do you want to transfer your current wallet balance to your bank account?</string>
+    <string name="rewards_points_earned">Rewards Points Earned</string>
+    <string name="use_rewards_points_to_redeem_promotion_cupons">Use reward points to promote your sales!</string>
+    <string name="_1_day_promotion">1 Day \nPromotion</string>
+    <string name="redem_for">Redeem for</string>
+    <string name="my_rewards">My Rewards</string>
+    <string name="days_promotion">Day\nPromotion</string>
+    <string name="points">points</string>
+    <string name="you_can_redeem_rewards_points_lorem_know_more">You can redeem rewards points\nKnow more</string>
+    <string name="select_the_items_you_want_to_promote">Select the items you want to promote</string>
+    <string name="redeem">Redeem</string>
+    <string name="coupon_redeem">Coupon Redeem</string>
+    <string name="bank_routing_number">Bank Routing Number</string>
+    <string name="bank_checking_account_number">Bank Account Number</string>
+    <string name="refer_friend">Refer to friend</string>
+    <string name="please_select_tag_imahe">Please select the tag image</string>
+    <string name="please_enter_tag_name">Please enter tag name</string>
+    <string name="please_enter_tag_description_">Please enter tag description</string>
+    <string name="please_enter_tag_type_">Please select tag type</string>
+    <string name="please_enter_tag_announcment">Please enter tag announcement</string>
+    <string name="please_enter_tag_payment_method">Please select payment method</string>
+    <string name="please_enter_tag_location">Location cann\'t be empty</string>
+    <string name="account_info">Account info</string>
+    <string name="payment_history">Payment History</string>
+    <string name="opps">Opps!</string>
+    <string name="availabilty">Availability:</string>
+    <string name="rewards_point_msg">Reward Points can be redeemed for:\n
+* Promoting Your Selling Items\n
+* Creating Tags On Map\n
+Reward Points can be gained from:\n
+*Each new signup with your referral code will reward both of you 50 points.
+*Each dollar transaction via app, including buying and selling, will reward you 1 point.
+</string>
+    <string name="promoting_your_selling_items_n_creating_tags_on_map">• Promoting Your Selling Items\n\n• Creating Tags On Map</string>
+    <string name="chat_popup_buyer_pending">• Your payment will be released to the seller once you click "Release Payment" button.\n\n• The seller has the option to dispute after 5 days of no reaction from you.</string>
+    <string name="reward_points_can_be_gained_from">Reward Points can be gained from:</string>
+    <string name="each_new_signup_with_your_referral_code_will_reward_both_of_you_50_points_each_dollar_transaction_via_app_including_buying_and_selling_will_reward_you_1_point">• Each new signup with your referral code will reward both of you 50 points.\n\n• Each dollar transaction via app, including buying and selling, will reward you 1 point.</string>
+    <string name="reward_points_can_be_redeemed_for">Reward Points can be redeemed for:</string>
+    <string name="refund">Refund</string>
+    <string name="refund_request">Refund Request</string>
+    <string name="release_payment">Release Payment</string>
+    <string name="confirm">Confirm</string>
+    <string name="release_refund">Release refund</string>
+    <string name="release_payment_msg">I confirm that the item is same as expected.</string>
+    <string name="refund_msg">Do you want to request a refund?</string>
+    <string name="refund_accept_msg">Do you want to accept refund request for this product? </string>
+    <string name="confirm_return_seller_msg">Make sure you receive the correct item before releasing the refund</string>
+    <string name="delivered">Delivered</string>
+    <string name="refunded">Refunded</string>
+    <string name="cancel_refund_request">Cancel Refund Request</string>
+    <string name="accept">Accept</string>
+    <string name="decline">Decline</string>
+    <string name="item_delivered">Item Delivered</string>
+    <string name="payment_received">Payment Received</string>
+    <string name="refund_requested">Refund requested</string>
+    <string name="refund_requested_notify_sellet">Refund requested by buyer</string>
+    <string name="inspect_the_items_that_are_returned_to_you">Inspect the items that are returned to you if received</string>
+    <string name="return_accepted_payment_pending">Refund request accepted. Return the item and ask the seller to release refund.</string>
+    <string name="refund_success">Amount refunded</string>
+    <string name="payment_released">Payment released</string>
+    <string name="reason_to_decline_refund">Reason to decline refund:</string>
+    <string name="write_reason_here">Write reason here</string>
+    <string name="buyer_confirm_item">If you have received this item please confirm.</string>
+    <string name="decline_refund_for_this_product">You decline refund for this product.</string>
+    <string name="decline_refund_decline">Your refund request has been declined.</string>
+    <string name="seller_decline_refund">Seller declined refund</string>
+    <string name="cancel_refund_request_msg">If you will If you will cancel your refund request then in future you will not be able to make any refund request for this order. Are you sure you want to cancel your request?</string>
+    <string name="what_happens">What Happens?</string>
+    <string name="provide_proof_of_your_speech_if_any">Attach any documents as evidence if any</string>
+    <string name="please_enter_reason_for_dispute">Please enter reason for dispute</string>
+    <string name="please_select_image">Please select image</string>
+    <string name="dispute_started">Dispute started</string>
+    <string name="dispute_closed">Dispute closed</string>
+    <string name="seller_submit_statement">Submitted proof, Admin will verify and take action.</string>
+    <string name="statement">Submit Proof</string>
+    <string name="pending_amount">Pending Amount</string>
+    <string name="awaiting_buyers_confirmation">Awaiting Buyer\'s Confirmation</string>
+    <string name="available_soon">Available Soon</string>
+    <string name="available_now">Available Now</string>
+    <string name="is_added_to_the_shelf">is added to the shelf</string>
+    <string name="how_will_you_get_the_item">How will you get the item?</string>
+    <string name="payout_detail_page_info_text">payment. For security reasons, we need the following to verify your identity. We do not store your information.</string>
+    <string name="info_msg_confirm"><p><strong>Transaction Policy Highlights:</strong></p>
+<ul>
+<li> Funds are immediately released upon pickup Confirmation</li>
+<li> Funds are automatically released within 5 days of purchase (in-person pickup option)or 5 days after delivery confirmation (shipped option)</li>
+</ul>
+<p><br /><strong>Refund Policy Highlights:</strong></p>
+<ul>
+<li> Refunds can be requested within 5 days of purchase, before the item is picked up</li>
+<li> Items are non-refundable once pickup is confirmed</li>
+<li> Shipped items can be returned within 5 days of delivery only if they are defective or materially different from description</li>
+</ul></string>
+    <string name="info_msg_confirm_pending_pickup_confirmation"><ul>
+<li> DO NOT hand the item to the buyer without receiving pickup Confirmation</li>
+<li> Funds are immediately released upon pickup Confirmation</li>
+<li> Funds are automatically released within 5 days of purchase (in-person pickup option) or 5 days after delivery confirmation (shipped option)</li>
+</ul></string>
+    <string name="info_msg_request_refund"><p><strong>Refund Policy Highlights:</strong></p>
+<ul>
+<li> Refunds should be approved if requested within 5 days of purchase, before the item is picked up</li>
+<li> Items are non-refundable once pickup is confirmed</li>
+<li> Shipped items can be returned within 5 days of delivery only if they are defective or materially different from description</li>
+</ul></string>
+    <string name="info_msg_you_have_requested_refund"><p>You can open a dispute if the seller declines your refund request or does not respond within 5 days.<br />Refunl̥d Policy Highlights:</p>
+<ul>
+<li> Refunds should be approved if requested within 5 days of purchase, before the item is picked up</li>
+<li> Items are non-refundable once pickup is confirmed</li>
+<li> Shipped items can be returned within 5 days of delivery only if they are defective or materially different from description</li>
+</ul></string>
+    <string name="info_msg_initiate_refund"><p>You have 5 days to respond the refund request. You may want to contact the buyer directly first.<br /><strong>Refund Policy Highlights:</strong></p>
+<ul>
+<li> Refunds should be approved if requested within 5 days of purchase, before the item is picked up</li>
+<li> Items are non-refundable once pickup is confirmed</li>
+<li> ̥Shipped items can be returned within 5 days of delivery only if they are defective or materially different from description</li>
+</ul></string>
+    =======
+    <string name="your_money_is_released_after_buyer_confirms_pickup">PENDING PICKUP CONFIRMATION\n(in-person pickup option):\nYour money is released after the buyer ‘Confirms’ pickup. Do not hand the product over until you receive confirmation.</string>
+    <string name="inspect_and_confirm_product_to_release_the_payment">After you receive the item, please release payment to the seller.</string>
+    <string name="inspect_and_confirm_product_to_release_the_payment_seller">Awaiting payment confirmation from the buyer. Ask the buyer to release payment once the item has been delivered.</string>
+    <!--    <string name="inspect_and_confirm_product_to_release_the_payment">Please contact the seller for other payment solutions for now.</string>-->
+    <!--    <string name="inspect_and_confirm_product_to_release_the_payment_seller">Please contact the buyer for other payment solutions for now.</string>-->
+    <string name="you_accept_the_refund_request_make_sure_you_receive_the_correct_item">You accept the Refund Request\nIMPORTANT: Make sure you receive the correct item before releasing the refund</string>
+    <string name="accepts_your_refund_request_make_sure_seller_releases">accepts your refund request IMPORTANT: Make sure the seller releases refund when returning the item</string>
+    <string name="initiates_a_refund_request">requested a refund. If you \"Accept\", you may request the return of your item before releasing refund to the buyer.</string>
+    <string name="you_have_requested_a_refund_you_will_receive_a_response_within_5_days">You have requested a refund. Please wait for the seller\'s response.</string>
+    <string name="accept_refund_request">Accept Refund Request</string>
+    <string name="you_have_submitted_the_dispute_statement_please_wait_for_admin_decision">You have submitted the dispute statement, please wait for admins’ decision</string>
+    <string name="submit_response">Submit Response</string>
+    <string name="accept_refund">Accept Refund</string>
+    <string name="has_initiated_a_dispute_on_this_order_you_have_3_days_to_submit">opened a dispute. You have 3 days to submit your response to the dispute or accept the refund request.</string>
+    <string name="has_accept_refund_dispute_dispute_on_this_order_you_have_3_days_to_submit">opened a dispute. You have 3 days to submit your response to the dispute or release the payment to the seller.</string>
+    <string name="you_decline_the_refund_due_to_following_reason">You declined the refund request. Please wait for the buyer\'s response. You will have the option to dispute after 3 days of no response from the buyer.</string>
+    <string name="you_have_not_responded_to">You have not responded to</string>
+    <string name="refund_request_within_5_days">refund request within 5 days</string>
+    <string name="cancel_refund">Cancel Refund</string>
+    <string name="decline_your_refund_request_due_to_following_reason">decline your refund request due to the following reason:</string>
+    <string name="do_you_want_to_request_a_refund">Do you want to request a refund? You may need to return the item if requested by the seller. We encourage you to contact the seller first.</string>
+    <string name="confirm_payment">Confirm Payment</string>
+    <string name="i_confirm_that_the_item_is_same_as_description">I confirm that the item is as described and agree to release the payment</string>
+    <string name="do_you_want_to_cancel_the_refund_request">Do you want to cancel the refund request?</string>
+    <string name="do_you_want_to_cancel_the_dispute_request">Do you want to cancel the dispute request?</string>
+    <string name="do_you_want_accept_the_refund_request">Do you want to accept the refund request?</string>
+    <string name="confirm_refund">Confirm Refund</string>
+    <string name="do_you_want_to_release_the_refund">Do you want to release the refund?</string>
+    <string name="more_info">More info</string>
+    <string name="you_have_5_days_to_start_a_dispute_or_the_order_wiil_be">You have 5 days to start a dispute, or the order will be automatically marked as completed.</string>
+    <string name="is_shared_with_you">is shared with you</string>
+    <string name="to_be_sure_the_funds_will_be_safely_transferred_to_your_bank_account_stripe_needs_the_following_information_to_confirm_your_identity_at_your_first_cash_out">To be sure the funds will be safely transferred to your bank account,\nStripe needs the following information to confirm your identity at your first cash out.</string>
+    <string name="if_you_don_t_have_a_ssn_n_please_upload_your_passport_below">If you don\'t have a SSN:\n Please upload your passport below.</string>
+    <string name="deposit_money">Deposit Money</string>
+    <string name="card_number">Card Number</string>
+    <string name="mm_yy">MM/YY</string>
+    <string name="mm_yyyy">MM/YYYY</string>
+    <string name="cvv">CVV</string>
+    <string name="card_holder_name">Card holder name</string>
+    <string name="invalid_card_number">Invalid Card Number</string>
+    <string name="please_enter_card_number">Please Enter Card Number</string>
+    <string name="please_enter_expiry_of_card">Please enter expiry of card</string>
+    <string name="invalid_expiry_number">Invalid expiry number</string>
+    <string name="please_enter_cvv">Please enter cvv</string>
+    <string name="add_debit_card">Add Debit Card</string>
+    <string name="dont_have_balance_for_cashout">You have insufficient balance to initiate cashout</string>
+    <string name="debit_card_number">Debit Card number</string>
+    <string name="order_complete">Order Complete.</string>
+    <string name="has_released_the_refund">has released the refund.</string>
+    <string name="order_complete_you_have_release_the_refund">Refund Complete.\n You have released the refund.</string>
+    <string name="order_complete_you_have_release_the_payment">Order Complete.\n You have released the payment.</string>
+    <string name="has_released_the_payment_check_your_wallet">has released the payment. Check your wallet page.</string>
+    <string name="reserved_the_item">reserved the item</string>
+    <string name="released_payment_for_the_item">released payment for the item</string>
+    <string name="requested_a_refund_for_the_item">requested a refund for the item</string>
+    <string name="declined_the_refund_request_for_the_item">declined the refund request for the item</string>
+    <string name="please_upload_both_side_of_pic_of_your_passport">Please select both first and last page image of the passport at the same time</string>
+    <string name="upload_first_last_photo_of_passport">Upload the first page (photo page) and last page of your passport</string>
+    <string name="accout_pending">Account Pending</string>
+    <string name="rejected_msg"> is rejected by Stripe, please contact support@taghawk.app for further assistance</string>
+    <string name="address_rejected">Address is rejected by Stripe, please modify your information on your profile page</string>
+    <string name="account_pending_status_msg">You have successfully submitted your info to stripe for review.\n Your identity will be verified within 3 days at the first cashout..
+</string>
+    <string name="please_select_dob">Please select DOB.</string>
+    <string name="please_upload_ssn_and_upload_your_passport">Please add SSN or upload your passport</string>
+    <string name="please_add_phone_number">Please add phone number.</string>
+    <string name="please_add_address">Please add Address.</string>
+    <string name="we_won_t_store_your_personal_information_all_data_are_processed_by_stripe">* We won’t store your personal information. All data are processed by Stripe</string>
+    <string name="has_not_responded_to_your_refund_request_within_5_days">has not responded to your refund request within 5 days</string>
+    <string name="upload">Upload</string>
+    <string name="stripe">STRIPE</string>
+    <string name="easily_list_sell_buy_from_your_phone"><![CDATA[Easily List Sell & Buy from your phone]]></string>
+    <string name="easily_list_sell_buy"><![CDATA[Easily List Sell & Buy]]></string>
+    <string name="find_your_tag_now">Find Your Tag Now!</string>
+    <string name="community_based_marketplace">• Community Based Marketplace</string>
+    <string name="risk_free_cashless_payment">• Risk-Free Cashless Payment</string>
+    <string name="labor_transportation_service"> <![CDATA[• Labor & Transportation Service]]></string>
+    <string name="in_app_live_chat">• In-App Live Chat</string>
+    <string name="verified_by">Verified By:</string>
+    <string name="wallet">Wallet</string>
+    <string name="googlepay_button_content_description">Google Pay</string>
+    <string name="buy_with_googlepay_button_content_description">Buy with Google Pay</string>
+    <string name="please_enter_the_verification_code">Please enter the verification code.</string>
+    <string name="please_create_your_account_by_your_full_legal_name">Please create your account by your full legal name</string>
+    <string name="please_create_your_account_by_your_full_legal_name1">Welcome on board! \nCreate your account to unlock more functions!</string>
+    <string name="app_update">New Updates Available</string>
+    <string name="update_msg">We have upgraded our secure payment system. Please update your app to the newest version for a better shopping experience.\n\nIf you have any question please email support@taghawk.app</string>
+    <string name="payment_history_msg">(Track order\'s status on the chat page with the buyer or on the “Payment History” page above)</string>
+    <string name="around_3_days">(balance will be available in 3 days)</string>
+    <string name="reserve_item">Reserve Item</string>
+    <string name="data_processing">Data Processing</string>
+    <!--<string name="deposit_account">Deposit Account</string>-->
+    <!--<string name="cash_out">Cash Out</string>-->
+
+    <!--<string name="announcement">Announcement</string>-->
+
+    <string name="university">University</string>
+    <string name="universities">Universities</string>
+    <string name="organization">Organization</string>
+    <string name="organizations">Organizations</string>
+    <string name="club">Club</string>
+    <string name="clubs">Clubs</string>
+    <string name="all_tag">All Tags</string>
+    <string name="tag_member">Tag Member</string>
+    <string name="my_tag">My Tags</string>
+    <string name="save_this_card">Save this card</string>
+    <string name="save_this_address">Save this address</string>
+    <string name="cart_payment_notice_text">*Your payment won\'t be released to the seller until you confirm receipt of the item.</string>
+    <string name="add_card">Add Card</string>
+    <string name="shipping_address">Shipping Address</string>
+    <string name="add_new_card">Add New Card</string>
+    <string name="confirm_purchase">Confirm Purchase</string>
+    <string name="open_a_dispute">Open a Dispute</string>
+    <string name="refund_policy">Refund Policy</string>
+    <string name="yes_lowercase">Yes</string>
+    <string name="accepted_the_refund_request_for_the_item">accepted the refund request for the item</string>
+    <string name="released_the_refund_for_the_item">released refund for the item</string>
+    <string name="cancel_dispute">Cancel Dispute</string>
+    <string name="you_have_opened_a_dispute_you_will_receive_admin_decision">You have opened a dispute. You will receive a decision from the admin within 7 days. If you have any questions please email: support@taghawk.app</string>
+    <string name="you_have_submitted_your_response">You have submitted your response. You will receive a decision from the admin within 7 days. If you have any questions please email: support@taghawk.app</string>
+    <string name="refund_complete">Refund Complete\n</string>
+    <string name="you_have_released_the_refund">You have released the refund.</string>
+    <string name="you_accepted_the_refund_request_if_correct_release_payment">You accepted the Refund Request. After the correct item has been returned, please click \"Release Refund\".</string>
+    <string name="return_the_item_if_agree_to_refund">accepted your refund request. Please return the item and ask the seller to \"Release Refund\".</string>
+    <string name="opened_a_dispute_for_the_lack_of_payment">opened a dispute for the lack of payment for the item</string>
+    <string name="opened_a_dispute_for_the_declined_refund_request">opened a dispute for the declined refund request of the item</string>
+    <string name="submitted_a_return_dispute_for_the_declined_refund_request">submitted a response to the declined refund request dispute for the item</string>
+    <string name="submitted_a_response_for_the_lack_payment_dispute">submitted a response to the payment dispute of the item</string>
+    <string name="refund_payment">Refund Payment</string>
+    <string name="you_will_receive_decision_from_the_admin_within_7_days">. You will receive a decision from the admin within 7 days</string>
+    <string name="due_to_the_following_reason">due to the following reason:\n</string>
+    <string name="opened_a_dispute_for_the_refund_request">opened a dispute for the refund request of the item</string>
+    <string name="submitted_a_response_to_the_refund_request_dispute">submitted a response to the refund request dispute for the item</string>
+    <string name="cancelled_the_payment_dispute">cancelled the payment dispute for the item</string>
+    <string name="cancelled_the_refund_request">cancelled the refund request for the item</string>
+    <string name="cancelled_the_declined_refund_request_dispute">cancelled the declined refund request dispute for the item</string>
+    <string name="cancelled_the_refund_request_dispute">cancelled the refund request dispute for the item</string>
+
+    <array name="tick_below_text_length_6">
+        <item>Min</item>
+        <item>20 miles</item>
+        <item>30 miles</item>
+        <item>40 miles</item>
+        <item>Max</item>
+    </array>
+
+    <string-array name="chat_spinner">
+        <item>All</item>
+        <item>Products</item>
+        <item>Communities</item>
+        <item>User</item>
+    </string-array>
+
+    <string-array name="instruction_camera">
+        <item> Front View </item>
+        <item> Left View</item>
+        <item> Rear View</item>
+        <item> Right View</item>
+        <item> Top View</item>
+        <item> Done </item>
+    </string-array>
+
+</resources>

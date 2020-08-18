@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:id="@+id/linear_layout_address_form"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_10sdp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/add_product"
+                        android:layout_marginTop="@dimen/_14sdp"
+                        android:text="@string/full_name" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/et_full_name"
+                        android:focusable="true"
+                        style="@style/add_product_edit_text"
+                        android:maxLength="30" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/add_product"
+                        android:layout_marginTop="@dimen/_14sdp"
+                        android:text="@string/street_address" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/et_street_address"
+                        style="@style/add_product_edit_text"
+                        android:maxLength="50" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/add_product"
+                        android:layout_marginTop="@dimen/_14sdp"
+                        android:text="@string/room_number" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/et_apartment"
+                        style="@style/add_product_edit_text"
+                        android:maxLength="30" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/add_product"
+                        android:layout_marginTop="@dimen/_14sdp"
+                        android:text="@string/zip_code" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/et_zip"
+                        style="@style/add_product_edit_text"
+                        android:inputType="number"
+                        android:maxLength="5" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/add_product"
+                        android:layout_marginTop="@dimen/_14sdp"
+                        android:text="@string/city" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/et_city"
+                        style="@style/add_product_edit_text" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/add_product"
+                        android:layout_marginTop="@dimen/_14sdp"
+                        android:text="@string/state" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/et_state"
+                        style="@style/add_product_edit_text" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/add_product"
+                        android:layout_marginTop="@dimen/_14sdp"
+                        android:text="@string/address_type" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/et_address_type"
+                        style="@style/add_product_edit_text" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/add_product"
+                        android:layout_marginTop="@dimen/_14sdp"
+                        android:text="@string/phon" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/edit_field_drawable">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv_country_code"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:drawablePadding="@dimen/_5sdp"
+                            android:drawableRight="@drawable/ic_arrow_down"
+                            android:fontFamily="@font/galano_grotesque_regular"
+                            android:gravity="center|center_horizontal"
+                            android:lineSpacingExtra="@dimen/_2sdp"
+                            android:text="+1"
+                            android:textColor="@color/txt_black"
+                            android:textSize="@dimen/_13ssp" />
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/et_verification_phone"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:layout_toEndOf="@+id/tv_country_code"
+                            android:background="@android:color/transparent"
+                            android:fontFamily="@font/galano_grotesque_regular"
+                            android:hint="@string/enter_phone_number"
+                            android:inputType="number"
+                            android:maxLength="13"
+                            android:paddingStart="@dimen/_5sdp"
+                            android:paddingEnd="@dimen/_10sdp"
+                            android:textColor="@color/txt_black"
+                            android:textSize="@dimen/_13ssp"
+                            android:visibility="visible" />
+
+                    </RelativeLayout>
+
+                    <CheckBox
+                        android:id="@+id/check_box_save_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:checked="true"
+                        android:fontFamily="@font/galano_grotesque_regular"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:text="@string/save_this_address" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_continue_to_review"
+                        android:layout_width="@dimen/_220sdp"
+                        android:layout_height="@dimen/_44sdp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/_30sdp"
+                        android:layout_marginBottom="@dimen/_20sdp"
+                        android:background="@drawable/ic_buy_button"
+                        android:fontFamily="@font/galano_grotesque_semi_bold"
+                        android:gravity="center"
+                        android:text="@string/continue_to_review"
+                        android:textColor="@color/White"
+                        android:textSize="@dimen/_14sdp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:id="@+id/linear_layout_address_list">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:layout_weight="1"
+                            android:padding="@dimen/_10sdp"
+                            android:fontFamily="@font/galano_grotesque_medium"
+                            android:maxLength="25"
+                            android:text="@string/add_new_address"
+                            android:textColor="@color/txt_black"
+                            android:textSize="@dimen/_14ssp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/image_view_add_address"
+                            android:src="@drawable/ic_add_black_24dp"
+                            android:layout_gravity="center_vertical"
+                            android:padding="10dp"
+                            android:layout_marginEnd="@dimen/_5sdp"/>
+
+                    </LinearLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/recycler_view_addresses"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+</layout>

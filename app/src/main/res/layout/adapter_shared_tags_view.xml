@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/_5sdp">
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/tv_share_tag_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:button="@drawable/check_box_toggle"
+            android:checked="false"
+            android:ellipsize="end"
+            android:fontFamily="@font/galano_grotesque_regular"
+            android:maxLines="2"
+            android:paddingStart="@dimen/_10sdp"
+            android:text=""
+            android:textColor="@color/txt_light_gray"
+            android:textSize="@dimen/_12sdp" />
+    </LinearLayout>
+</layout>

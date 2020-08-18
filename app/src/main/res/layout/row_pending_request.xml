@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <LinearLayout
+        android:id="@+id/ll_group_member"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_member"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_15sdp"
+            android:background="?attr/selectableItemBackground"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_detail_user_placeholder" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_member_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/_5sdp"
+                android:background="?attr/selectableItemBackground"
+                android:fontFamily="@font/galano_grotesque_semi_bold"
+                android:textColor="@color/txt_black"
+                android:textSize="@dimen/_10ssp"
+                tools:text="Annie Hall (You)" />
+
+            <TextView
+                android:id="@+id/tv_view_document"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_doc_attach"
+                android:drawablePadding="@dimen/_5sdp"
+                android:fontFamily="@font/galano_grotesque_semi_bold"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:text="@string/view_document"
+                android:textColor="@color/editp_grey"
+                android:textSize="@dimen/_8ssp" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/ib_accept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="?attr/selectableItemBackground"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/ic_doc_approve" />
+
+        <ImageButton
+            android:id="@+id/ib_reject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="?attr/selectableItemBackground"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/ic_doc_reject" />
+
+        <ImageButton
+            android:id="@+id/ib_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="?attr/selectableItemBackground"
+            android:padding="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:src="@drawable/ic_doc_chat" />
+    </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/light_gray"/>
+    </LinearLayout>
+</layout>

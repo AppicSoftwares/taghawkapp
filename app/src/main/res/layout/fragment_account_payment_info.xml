@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/White"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:id="@+id/cl_parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/appbar_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/White">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="@color/White"
+                    android:visibility="visible"
+                    app:contentInsetStart="0dp">
+
+                    <include
+                        android:id="@+id/include_header"
+                        layout="@layout/layout_header" />
+                </androidx.appcompat.widget.Toolbar>
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="vertical"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:background="@drawable/white_filled_background"
+                    app:cardCornerRadius="@dimen/_18sdp"
+                    app:cardElevation="@dimen/_6sdp">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/white_filled_background"
+                        android:baselineAligned="false"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_2sdp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <TextView
+                                android:id="@+id/view_background"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.5"
+                                android:background="@drawable/toggle_active_background" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <FrameLayout
+                                android:id="@+id/fl_messages"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:background="?attr/selectableItemBackground"
+                                android:paddingTop="@dimen/_7sdp"
+                                android:paddingBottom="@dimen/_7sdp">
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/tv_messages"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/galano_grotesque_medium"
+                                    android:gravity="center"
+                                    android:text="@string/account_info"
+                                    android:textColor="@color/White"
+                                    android:textSize="@dimen/_13sdp" />
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:id="@+id/fl_notifications"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:background="?attr/selectableItemBackground"
+                                android:paddingTop="@dimen/_7sdp"
+                                android:paddingBottom="@dimen/_7sdp">
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/tv_notifications"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/galano_grotesque_medium"
+                                    android:gravity="center"
+                                    android:text="@string/payment_history"
+                                    android:textColor="@color/Gray"
+                                    android:textSize="@dimen/_13sdp" />
+                            </FrameLayout>
+                        </LinearLayout>
+                    </FrameLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/vp_payment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </LinearLayout>
+</layout>

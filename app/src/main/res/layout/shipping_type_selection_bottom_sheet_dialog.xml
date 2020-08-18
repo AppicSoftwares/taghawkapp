@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_150sdp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/bottom_sheet_shape"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:gravity="center_vertical"
+                android:src="@drawable/ic_action_popup_rec" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:fontFamily="@font/galano_grotesque_semi_bold"
+                android:text="@string/how_will_you_get_the_item"
+                android:textColor="@color/txt_black"
+                android:textSize="@dimen/_16ssp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+
+                    android:id="@+id/tv_pickup"
+                    style="@style/shipping_avalibilty"
+                    android:text="@string/pickup" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_deliver"
+                    style="@style/shipping_avalibilty"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:text="@string/deliver" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_shipping"
+                    style="@style/shipping_avalibilty"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:text="@string/shipping" />
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_continue"
+                android:layout_width="@dimen/_160sdp"
+                android:layout_height="@dimen/_38sdp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:background="@drawable/ic_buy_button"
+                android:clickable="true"
+                android:fontFamily="@font/galano_grotesque_semi_bold"
+                android:gravity="center"
+                android:padding="@dimen/_8ssp"
+                android:visibility="gone"
+                android:text="@string/continue_"
+                android:textAllCaps="false"
+                android:textColor="@color/White"
+                android:textSize="@dimen/_14ssp" />
+
+        </LinearLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

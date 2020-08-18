@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/_5sdp"
+        app:cardElevation="@dimen/_2sdp">
+
+        <FrameLayout
+            android:id="@+id/fl_product"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+
+                android:id="@+id/iv_product"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_home_placeholder" />
+
+            <TextView
+                android:id="@+id/tv_count"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rounded_transparent_black_overlay"
+                android:fontFamily="@font/galano_grotesque_medium"
+                android:gravity="center"
+                android:textColor="@color/White"
+                android:textSize="@dimen/_11ssp"
+                android:visibility="gone"
+                tools:text="81+" />
+        </FrameLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

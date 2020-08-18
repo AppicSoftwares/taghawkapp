@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/include_header"
+            layout="@layout/layout_header" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/_8sdp">
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_msg_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/galano_grotesque_semi_bold"
+                    android:text="@string/to_be_sure_the_funds_will_be_safely_transferred_to_your_bank_account_stripe_needs_the_following_information_to_confirm_your_identity_at_your_first_cash_out"
+                    android:textColor="@color/txt_black"
+                    android:textSize="@dimen/_14sdp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_msg_second"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/galano_grotesque_semi_bold"
+                    android:text="@string/we_won_t_store_your_personal_information_all_data_are_processed_by_stripe"
+                    android:textColor="@color/txt_black"
+                    android:textSize="@dimen/_14sdp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="@dimen/_20sdp">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/iv_info_dob"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/_2sdp"
+                        android:src="@drawable/ic_edit_dob" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_4sdp"
+                        android:layout_toEndOf="@+id/iv_info_dob"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_2sdp">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv_dob_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/galano_grotesque_medium"
+                            android:text="@string/date_of_birth"
+                            android:textColor="@color/Black"
+                            android:textSize="@dimen/_11ssp" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv_dob_info"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/galano_grotesque_regular"
+                            android:text="@string/date_format"
+                            android:textColor="@color/editp_grey"
+                            android:textSize="@dimen/_10ssp" />
+                    </LinearLayout>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/tv_dob_verify"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_24sdp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="3dp"
+                        android:background="@drawable/shape_rectangle_theme_fill"
+                        android:fontFamily="@font/galano_grotesque_semi_bold"
+                        android:text="@string/add"
+                        android:textAllCaps="false"
+                        android:textColor="@color/White"
+                        android:textSize="@dimen/_10ssp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@color/LightGrey" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/iv_ssn_facebook"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/_2sdp"
+                        android:src="@drawable/ic_edit_ifsc" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_4sdp"
+                        android:layout_toEndOf="@+id/iv_ssn_facebook"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_2sdp">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv_ssn_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/galano_grotesque_medium"
+                            android:text="@string/ssn"
+                            android:textColor="@color/Black"
+                            android:textSize="@dimen/_11ssp" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv_ssn_info"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/galano_grotesque_regular"
+                            android:text=""
+                            android:textColor="@color/editp_grey"
+                            android:textSize="@dimen/_10ssp" />
+                    </LinearLayout>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/tv_ssn_verify"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_24sdp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/shape_rectangle_theme_fill"
+                        android:fontFamily="@font/galano_grotesque_semi_bold"
+                        android:text="@string/add"
+                        android:textAllCaps="false"
+                        android:textColor="@color/White"
+                        android:textSize="@dimen/_10ssp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/iv_info_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/_2sdp"
+                        android:src="@drawable/ic_edit_phone" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_4sdp"
+                        android:layout_toEndOf="@+id/iv_info_phone"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_2sdp">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv_phone_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/galano_grotesque_medium"
+                            android:text="@string/phone"
+                            android:textColor="@color/Black"
+                            android:textSize="@dimen/_11ssp" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv_phone_info"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/galano_grotesque_regular"
+                            android:textColor="@color/editp_grey"
+                            android:textSize="@dimen/_10ssp"
+                            tools:text="+919999999999" />
+                    </LinearLayout>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/tv_phone_verify"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_24sdp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/shape_rectangle_theme_fill"
+                        android:fontFamily="@font/galano_grotesque_semi_bold"
+                        android:text="@string/add"
+                        android:textAllCaps="false"
+                        android:textColor="@color/White"
+                        android:textSize="@dimen/_10ssp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@color/LightGrey" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/iv_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_edit_address" />
+
+                    <LinearLayout
+                        android:layout_width="252dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/_4ssp"
+                        android:layout_toStartOf="@+id/tv_add_address"
+                        android:layout_toEndOf="@+id/iv_address"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_2sdp">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/galano_grotesque_medium"
+                            android:text="@string/address"
+                            android:textColor="@color/Black"
+                            android:textSize="@dimen/_11ssp" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv_address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/galano_grotesque_regular"
+                            android:lines="2"
+                            android:maxLines="2"
+                            android:minLines="1"
+                            android:textColor="@color/editp_grey"
+                            android:textSize="@dimen/_10ssp"
+                            tools:text="" />
+                    </LinearLayout>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/tv_add_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_24sdp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/shape_rectangle_theme_fill"
+                        android:fontFamily="@font/galano_grotesque_semi_bold"
+                        android:text="@string/add"
+                        android:textAllCaps="false"
+                        android:textColor="@color/White"
+                        android:textSize="@dimen/_10ssp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@color/LightGrey" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:fontFamily="@font/galano_grotesque_semi_bold"
+                    android:gravity="center_horizontal"
+                    android:text="@string/if_you_don_t_have_a_ssn_n_please_upload_your_passport_below"
+                    android:textColor="@color/txt_black"
+                    android:textSize="@dimen/_15sdp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_add_image"
+                        android:visibility="gone" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/iv_upload"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_45sdp"
+                        android:layout_gravity="center_vertical"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:fontFamily="@font/galano_grotesque_semi_bold"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/_5ssp"
+                        android:text="@string/select"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/_13ssp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_upload"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:fontFamily="@font/galano_grotesque_medium"
+                        android:text="Document Uploaded"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/_14sdp"
+                        android:visibility="gone" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_documents"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:layout_weight="1" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/tv_document_upload"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_24sdp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/shape_rectangle_theme_fill"
+                        android:fontFamily="@font/galano_grotesque_semi_bold"
+                        android:text="@string/upload"
+                        android:textAllCaps="false"
+                        android:textColor="@color/White"
+                        android:textSize="@dimen/_10ssp" />
+                </LinearLayout>
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_cash_out"
+                    android:layout_width="@dimen/_220sdp"
+                    android:layout_height="@dimen/_36sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:background="@drawable/ic_buy_button"
+                    android:fontFamily="@font/galano_grotesque_semi_bold"
+                    android:gravity="center"
+                    android:text="@string/cash_out"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/_14sdp" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</layout>

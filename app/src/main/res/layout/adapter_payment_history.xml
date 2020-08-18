@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/_8sdp">
+
+        <!--<android.support.v7.widget.CardView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--app:cardUseCompatPadding="true">-->
+
+        <LinearLayout
+            android:id="@+id/ll_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_product"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:src="@drawable/ic_home_placeholder" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_product_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_5sdp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_product_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/galano_grotesque_medium"
+                        android:maxLength="16"
+                        android:text="Biks"
+                        android:textColor="@color/txt_black"
+                        android:textSize="@dimen/_15sdp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:fontFamily="@font/galano_grotesque_semi_bold"
+                        android:text="$ 100"
+                        android:visibility="gone"
+                        android:textColor="@color/txt_black"
+                        android:textSize="@dimen/_15ssp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_product_name"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/_5sdp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_date"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/galano_grotesque_medium"
+                        android:text="29/10/2019"
+                        android:textColor="@color/txt_black"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:id="@+id/iv_chat"
+                        android:padding="@dimen/_3sdp"
+                        android:src="@drawable/ic_tab_chat_unactive" />
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_current_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:fontFamily="@font/galano_grotesque_medium"
+                    android:text="PENDING"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_11sdp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:fontFamily="@font/galano_grotesque_medium"
+                    android:text="Open the chat page for transaction details"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/_11sdp" />
+
+            </LinearLayout>
+        </LinearLayout>
+        <!--</android.support.v7.widget.CardView>-->
+        <LinearLayout
+            android:id="@+id/ll_action_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:visibility="gone">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_refund"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:background="@drawable/round_border_color_primary"
+                android:fontFamily="@font/galano_grotesque_semi_bold"
+                android:gravity="center"
+                android:text="@string/refund"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_12sdp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_release_payment"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_28sdp"
+                android:layout_weight="1"
+                android:background="@drawable/ic_buy_button"
+                android:fontFamily="@font/galano_grotesque_semi_bold"
+                android:gravity="center"
+                android:paddingStart="@dimen/_5sdp"
+                android:paddingEnd="@dimen/_5sdp"
+                android:text="@string/confirm"
+                android:textColor="@color/White"
+
+                android:textSize="@dimen/_12sdp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_action"
+                android:layout_width="@dimen/_160sdp"
+                android:layout_height="@dimen/_28sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/ic_buy_button"
+                android:fontFamily="@font/galano_grotesque_semi_bold"
+                android:gravity="center"
+
+                android:text="@string/confirm"
+                android:textColor="@color/White"
+                android:textSize="@dimen/_12sdp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@color/txt_light_gray" />
+    </LinearLayout>
+</layout>

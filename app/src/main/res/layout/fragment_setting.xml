@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/White"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/_10sdp">
+
+        <include
+            android:id="@+id/include_header"
+            layout="@layout/layout_header" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/include_header"
+            android:layout_marginBottom="@dimen/_50sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/_8sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/setting_style"
+                        android:layout_weight="1"
+                        android:text="@string/push_notifications" />
+
+                    <ToggleButton
+                        android:id="@+id/tb_disable_push"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@null"
+                        android:button="@drawable/firm_toggle"
+                        android:checked="true"
+                        android:minWidth="@dimen/_30sdp"
+                        android:textOff=""
+                        android:textOn="" />
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/change_password"
+                    style="@style/setting_style"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:drawableEnd="@drawable/ic_promo_dropdown"
+                    android:text="@string/change_password" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_referal"
+                    style="@style/setting_style"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:drawableEnd="@drawable/ic_promo_dropdown"
+                    android:text="@string/refer_friend" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_block_users"
+                    style="@style/setting_style"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:drawableEnd="@drawable/ic_promo_dropdown"
+                    android:text="@string/block_users" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_register_as_hawkdriver"
+                    style="@style/setting_style"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:drawableEnd="@drawable/ic_promo_dropdown"
+                    android:text="@string/register_as_hawkdriver"
+                    android:visibility="gone" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_faq"
+                    style="@style/setting_style"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:drawableEnd="@drawable/ic_promo_dropdown"
+                    android:text="@string/faq" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_terms_use"
+                    style="@style/setting_style"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:drawableEnd="@drawable/ic_promo_dropdown"
+                    android:text="@string/terms_of_use" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_privacy_policy"
+                    style="@style/setting_style"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:drawableEnd="@drawable/ic_promo_dropdown"
+                    android:text="@string/privacy_policy" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_logout"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_38sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/ic_buy_button"
+            android:fontFamily="@font/galano_grotesque_semi_bold"
+            android:gravity="center"
+            android:text="@string/logout"
+            android:textColor="@color/White"
+            android:textSize="@dimen/_14sdp" />
+    </RelativeLayout>
+
+</layout>

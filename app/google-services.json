@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "440669364249",
+    "firebase_url": "https://taghawk-232915.firebaseio.com",
+    "project_id": "taghawk-232915",
+    "storage_bucket": "taghawk-232915.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:440669364249:android:c63983657cc24e6a",
+        "android_client_info": {
+          "package_name": "com.taghawk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "440669364249-hcpegn9qf97psavr17mh38s3697vnflg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.taghawk",
+            "certificate_hash": "1470b245a7a88b2f07ebcf22c949f9248081ab56"
+          }
+        },
+        {
+          "client_id": "440669364249-fd9ohggg4hj0fp3popa7jd7cmjf30jab.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACbEGP1MI-Y2-JHmuIFbZelIf4M8X2C6c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "440669364249-fd9ohggg4hj0fp3popa7jd7cmjf30jab.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "440669364249-l8ial8uqb85inonfsuk1c28c1akqcmvd.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.tag-hawk.app"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

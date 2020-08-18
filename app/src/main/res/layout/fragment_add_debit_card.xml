@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/include_header"
+            layout="@layout/layout_header" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_15sdp">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_card_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/galano_grotesque_medium"
+                android:hint="@string/card_number"
+                android:inputType="number"
+                android:maxLength="16"
+                android:textColor="@color/txt_black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_expiry"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_4sdp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/galano_grotesque_medium"
+                    android:hint="@string/mm_yy"
+                    android:maxLength="5"
+                    android:inputType="phone"
+                    android:textColor="@color/txt_black" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_cvv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_4sdp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/galano_grotesque_medium"
+                    android:hint="@string/cvv"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:textColor="@color/txt_black" />
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_card_holder_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:fontFamily="@font/galano_grotesque_medium"
+                android:hint="@string/card_holder_name"
+                android:inputType="text"
+                android:textColor="@color/txt_black" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_add"
+                android:layout_width="@dimen/_220sdp"
+                android:layout_height="@dimen/_36sdp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:background="@drawable/ic_buy_button"
+                android:fontFamily="@font/galano_grotesque_semi_bold"
+                android:gravity="center"
+                android:text="@string/add"
+                android:textColor="@color/White"
+                android:textSize="@dimen/_14sdp" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

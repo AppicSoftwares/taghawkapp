@@ -1,0 +1,596 @@
+{
+  "shippingPrirceDetails": [
+    {
+      "weight": "1",
+      "fedexPrice": "7.85"
+    },
+    {
+      "weight": "2",
+      "fedexPrice": "8.52"
+    },
+    {
+      "weight": "3",
+      "fedexPrice": "8.87"
+    },
+    {
+      "weight": "4",
+      "fedexPrice": "9.13"
+    },
+    {
+      "weight": "5",
+      "fedexPrice": "9.37"
+    },
+    {
+      "weight": "6",
+      "fedexPrice": "9.68"
+    },
+    {
+      "weight": "7",
+      "fedexPrice": "10.23"
+    },
+    {
+      "weight": "8",
+      "fedexPrice": "10.43"
+    },
+    {
+      "weight": "9",
+      "fedexPrice": "10.59"
+    },
+    {
+      "weight": "10",
+      "fedexPrice": "10.84"
+    },
+    {
+      "weight": "11",
+      "fedexPrice": "11.31"
+    },
+    {
+      "weight": "12",
+      "fedexPrice": "11.50"
+    },
+    {
+      "weight": "13",
+      "fedexPrice": "11.77"
+    },
+    {
+      "weight": "14",
+      "fedexPrice": "12.08"
+    },
+    {
+      "weight": "15",
+      "fedexPrice": "12.15"
+    },
+    {
+      "weight": "16",
+      "fedexPrice": "12.40"
+    },
+    {
+      "weight": "17",
+      "fedexPrice": "12.62"
+    },
+    {
+      "weight": "18",
+      "fedexPrice": "12.63"
+    },
+    {
+      "weight": "19",
+      "fedexPrice": "12.90"
+    },
+    {
+      "weight": "20",
+      "fedexPrice": "13.08"
+    },
+    {
+      "weight": "21",
+      "fedexPrice": "13.34"
+    },
+    {
+      "weight": "22",
+      "fedexPrice": "13.63"
+    },
+    {
+      "weight": "23",
+      "fedexPrice": "13.68"
+    },
+    {
+      "weight": "24",
+      "fedexPrice": "14.05"
+    },
+    {
+      "weight": "25",
+      "fedexPrice": "14.21"
+    },
+    {
+      "weight": "26",
+      "fedexPrice": "14.75"
+    },
+    {
+      "weight": "27",
+      "fedexPrice": "15.11"
+    },
+    {
+      "weight": "28",
+      "fedexPrice": "15.37"
+    },
+    {
+      "weight": "29",
+      "fedexPrice": "15.70"
+    },
+    {
+      "weight": "30",
+      "fedexPrice": "15.86"
+    },
+    {
+      "weight": "31",
+      "fedexPrice": "16.19"
+    },
+    {
+      "weight": "32",
+      "fedexPrice": "16.22"
+    },
+    {
+      "weight": "33",
+      "fedexPrice": "16.30"
+    },
+    {
+      "weight": "34",
+      "fedexPrice": "16.56"
+    },
+    {
+      "weight": "35",
+      "fedexPrice": "16.86"
+    },
+    {
+      "weight": "36",
+      "fedexPrice": "17.11"
+    },
+    {
+      "weight": "37",
+      "fedexPrice": "17.54"
+    },
+    {
+      "weight": "38",
+      "fedexPrice": "17.80"
+    },
+    {
+      "weight": "39",
+      "fedexPrice": "18.05"
+    },
+    {
+      "weight": "40",
+      "fedexPrice": "18.07"
+    },
+    {
+      "weight": "41",
+      "fedexPrice": "18.31"
+    },
+    {
+      "weight": "42",
+      "fedexPrice": "18.41"
+    },
+    {
+      "weight": "43",
+      "fedexPrice": "18.84"
+    },
+    {
+      "weight": "44",
+      "fedexPrice": "19.10"
+    },
+    {
+      "weight": "45",
+      "fedexPrice": "19.12"
+    },
+    {
+      "weight": "46",
+      "fedexPrice": "19.54"
+    },
+    {
+      "weight": "47",
+      "fedexPrice": "19.62"
+    },
+    {
+      "weight": "48",
+      "fedexPrice": "19.63"
+    },
+    {
+      "weight": "49",
+      "fedexPrice": "19.64"
+    },
+    {
+      "weight": "50",
+      "fedexPrice": "19.65"
+    },
+    {
+      "weight": "51",
+      "fedexPrice": "19.66"
+    },
+    {
+      "weight": "52",
+      "fedexPrice": "19.67"
+    },
+    {
+      "weight": "53",
+      "fedexPrice": "19.68"
+    },
+    {
+      "weight": "54",
+      "fedexPrice": "19.69"
+    },
+    {
+      "weight": "55",
+      "fedexPrice": "19.70"
+    },
+    {
+      "weight": "56",
+      "fedexPrice": "19.71"
+    },
+    {
+      "weight": "57",
+      "fedexPrice": "20.06"
+    },
+    {
+      "weight": "58",
+      "fedexPrice": "20.07"
+    },
+    {
+      "weight": "59",
+      "fedexPrice": "20.43"
+    },
+    {
+      "weight": "60",
+      "fedexPrice": "20.63"
+    },
+    {
+      "weight": "61",
+      "fedexPrice": "20.86"
+    },
+    {
+      "weight": "62",
+      "fedexPrice": "21.49"
+    },
+    {
+      "weight": "63",
+      "fedexPrice": "21.50"
+    },
+    {
+      "weight": "64",
+      "fedexPrice": "22.08"
+    },
+    {
+      "weight": "65",
+      "fedexPrice": "22.32"
+    },
+    {
+      "weight": "66",
+      "fedexPrice": "22.64"
+    },
+    {
+      "weight": "67",
+      "fedexPrice": "22.94"
+    },
+    {
+      "weight": "68",
+      "fedexPrice": "23.12"
+    },
+    {
+      "weight": "69",
+      "fedexPrice": "23.38"
+    },
+    {
+      "weight": "70",
+      "fedexPrice": "23.49"
+    },
+    {
+      "weight": "71",
+      "fedexPrice": "23.62"
+    },
+    {
+      "weight": "72",
+      "fedexPrice": "24.17"
+    },
+    {
+      "weight": "73",
+      "fedexPrice": "24.55"
+    },
+    {
+      "weight": "74",
+      "fedexPrice": "25.45"
+    },
+    {
+      "weight": "75",
+      "fedexPrice": "26.64"
+    },
+    {
+      "weight": "76",
+      "fedexPrice": "27.89"
+    },
+    {
+      "weight": "77",
+      "fedexPrice": "28.99"
+    },
+    {
+      "weight": "78",
+      "fedexPrice": "29.57"
+    },
+    {
+      "weight": "79",
+      "fedexPrice": "30.90"
+    },
+    {
+      "weight": "80",
+      "fedexPrice": "31.75"
+    },
+    {
+      "weight": "81",
+      "fedexPrice": "32.51"
+    },
+    {
+      "weight": "82",
+      "fedexPrice": "33.57"
+    },
+    {
+      "weight": "83",
+      "fedexPrice": "33.90"
+    },
+    {
+      "weight": "84",
+      "fedexPrice": "34.91"
+    },
+    {
+      "weight": "85",
+      "fedexPrice": "35.86"
+    },
+    {
+      "weight": "86",
+      "fedexPrice": "37.52"
+    },
+    {
+      "weight": "87",
+      "fedexPrice": "37.93"
+    },
+    {
+      "weight": "88",
+      "fedexPrice": "39.88"
+    },
+    {
+      "weight": "89",
+      "fedexPrice": "41.27"
+    },
+    {
+      "weight": "90",
+      "fedexPrice": "42.57"
+    },
+    {
+      "weight": "91",
+      "fedexPrice": "42.58"
+    },
+    {
+      "weight": "92",
+      "fedexPrice": "44.35"
+    },
+    {
+      "weight": "93",
+      "fedexPrice": "44.93"
+    },
+    {
+      "weight": "94",
+      "fedexPrice": "45.59"
+    },
+    {
+      "weight": "95",
+      "fedexPrice": "46.65"
+    },
+    {
+      "weight": "96",
+      "fedexPrice": "47.69"
+    },
+    {
+      "weight": "97",
+      "fedexPrice": "48.79"
+    },
+    {
+      "weight": "98",
+      "fedexPrice": "49.91"
+    },
+    {
+      "weight": "99",
+      "fedexPrice": "51.00"
+    },
+    {
+      "weight": "100",
+      "fedexPrice": "51.95"
+    },
+    {
+      "weight": "101",
+      "fedexPrice": "51.96"
+    },
+    {
+      "weight": "102",
+      "fedexPrice": "52.07"
+    },
+    {
+      "weight": "103",
+      "fedexPrice": "53.49"
+    },
+    {
+      "weight": "104",
+      "fedexPrice": "53.81"
+    },
+    {
+      "weight": "105",
+      "fedexPrice": "54.69"
+    },
+    {
+      "weight": "106",
+      "fedexPrice": "55.59"
+    },
+    {
+      "weight": "107",
+      "fedexPrice": "56.41"
+    },
+    {
+      "weight": "108",
+      "fedexPrice": "57.22"
+    },
+    {
+      "weight": "109",
+      "fedexPrice": "58.37"
+    },
+    {
+      "weight": "110",
+      "fedexPrice": "58.75"
+    },
+    {
+      "weight": "111",
+      "fedexPrice": "59.41"
+    },
+    {
+      "weight": "112",
+      "fedexPrice": "60.62"
+    },
+    {
+      "weight": "113",
+      "fedexPrice": "60.68"
+    },
+    {
+      "weight": "114",
+      "fedexPrice": "61.32"
+    },
+    {
+      "weight": "115",
+      "fedexPrice": "61.99"
+    },
+    {
+      "weight": "116",
+      "fedexPrice": "62.63"
+    },
+    {
+      "weight": "117",
+      "fedexPrice": "63.26"
+    },
+    {
+      "weight": "118",
+      "fedexPrice": "63.92"
+    },
+    {
+      "weight": "119",
+      "fedexPrice": "64.59"
+    },
+    {
+      "weight": "120",
+      "fedexPrice": "66.34"
+    },
+    {
+      "weight": "121",
+      "fedexPrice": "66.43"
+    },
+    {
+      "weight": "122",
+      "fedexPrice": "66.89"
+    },
+    {
+      "weight": "123",
+      "fedexPrice": "67.57"
+    },
+    {
+      "weight": "124",
+      "fedexPrice": "68.21"
+    },
+    {
+      "weight": "125",
+      "fedexPrice": "68.90"
+    },
+    {
+      "weight": "126",
+      "fedexPrice": "70.21"
+    },
+    {
+      "weight": "127",
+      "fedexPrice": "70.29"
+    },
+    {
+      "weight": "128",
+      "fedexPrice": "70.94"
+    },
+    {
+      "weight": "129",
+      "fedexPrice": "72.29"
+    },
+    {
+      "weight": "130",
+      "fedexPrice": "72.32"
+    },
+    {
+      "weight": "131",
+      "fedexPrice": "72.98"
+    },
+    {
+      "weight": "132",
+      "fedexPrice": "73.68"
+    },
+    {
+      "weight": "133",
+      "fedexPrice": "74.36"
+    },
+    {
+      "weight": "134",
+      "fedexPrice": "75.03"
+    },
+    {
+      "weight": "135",
+      "fedexPrice": "75.61"
+    },
+    {
+      "weight": "136",
+      "fedexPrice": "76.24"
+    },
+    {
+      "weight": "137",
+      "fedexPrice": "76.90"
+    },
+    {
+      "weight": "138",
+      "fedexPrice": "77.60"
+    },
+    {
+      "weight": "139",
+      "fedexPrice": "78.31"
+    },
+    {
+      "weight": "140",
+      "fedexPrice": "79.00"
+    },
+    {
+      "weight": "141",
+      "fedexPrice": "79.70"
+    },
+    {
+      "weight": "142",
+      "fedexPrice": "80.02"
+    },
+    {
+      "weight": "143",
+      "fedexPrice": "80.73"
+    },
+    {
+      "weight": "144",
+      "fedexPrice": "82.22"
+    },
+    {
+      "weight": "145",
+      "fedexPrice": "82.50"
+    },
+    {
+      "weight": "146",
+      "fedexPrice": "82.51"
+    },
+    {
+      "weight": "147",
+      "fedexPrice": "83.66"
+    },
+    {
+      "weight": "148",
+      "fedexPrice": "84.68"
+    }
+  ]
+}

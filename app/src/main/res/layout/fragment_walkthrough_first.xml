@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/abc3">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:fontFamily="@font/galano_grotesque_bold"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/_8sdp"
+            android:text="@string/easily_list_sell_buy"
+            android:textColor="@color/txt_black"
+            android:textSize="@dimen/_18sdp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:fontFamily="@font/galano_grotesque_medium"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/_8sdp"
+            android:text="@string/find_your_tag_now"
+            android:textColor="@color/txt_black"
+            android:textSize="@dimen/_18sdp" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_160sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:visibility="gone"
+            android:scaleType="fitXY"
+            android:src="@drawable/tutorials" />
+
+        <LinearLayout
+            android:visibility="gone"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/galano_grotesque_semi_bold"
+                android:padding="@dimen/_8sdp"
+                android:text="@string/community_based_marketplace"
+                android:textColor="@color/txt_black"
+                android:textSize="@dimen/_15sdp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/galano_grotesque_semi_bold"
+                android:padding="@dimen/_8sdp"
+                android:text="@string/risk_free_cashless_payment"
+                android:textColor="@color/txt_black"
+                android:textSize="@dimen/_15sdp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/galano_grotesque_semi_bold"
+                android:padding="@dimen/_8sdp"
+                android:text="@string/labor_transportation_service"
+                android:textColor="@color/txt_black"
+                android:textSize="@dimen/_15sdp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/galano_grotesque_semi_bold"
+                android:padding="@dimen/_8sdp"
+                android:text="@string/in_app_live_chat"
+                android:textColor="@color/txt_black"
+                android:textSize="@dimen/_15sdp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true">
+
+        <include
+            android:id="@+id/filter"
+            layout="@layout/layout_header" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/filter">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_15sdp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_set_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/galano_grotesque_medium"
+                    android:text="@string/set_location"
+                    android:textColor="@color/txt_black"
+                    android:textSize="@dimen/_14sdp" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_input_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_set_location"
+                    android:layout_marginTop="@dimen/_15sdp">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/text_input_location"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/location"
+                        android:textColorHint="#d1dfe9"
+                        app:boxCornerRadiusBottomEnd="@dimen/_8sdp"
+                        app:boxCornerRadiusBottomStart="@dimen/_8sdp"
+                        app:boxCornerRadiusTopEnd="@dimen/_8sdp"
+                        app:boxCornerRadiusTopStart="@dimen/_8sdp">
+
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_location"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:editable="false"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:fontFamily="@font/galano_grotesque_regular"
+                            android:paddingEnd="@dimen/_25sdp"
+                            android:singleLine="true"
+                            android:textColor="@color/txt_black"
+                            android:textColorHint="#d1dfe9"
+                            android:textSize="@dimen/_13ssp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/tv_current_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerVertical="true"
+
+                        android:padding="@dimen/_12sdp"
+                        android:src="@drawable/ic_current_location" />
+                </RelativeLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/car_map"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_172sdp"
+                    android:layout_below="@+id/rl_input_location"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    app:cardCornerRadius="@dimen/_10sdp"
+                    app:cardElevation="@dimen/_2sdp"
+                    app:cardUseCompatPadding="true">
+
+                    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/map"
+                        android:name="com.google.android.gms.maps.SupportMapFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <!--<android.support.v7.widget.AppCompatImageView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="bottom|end"-->
+                    <!--android:layout_marginEnd="@dimen/_8sdp"-->
+                    <!--android:layout_marginBottom="@dimen/_8sdp"-->
+
+                    <!--android:src="@drawable/ic_current_location" />-->
+                </androidx.cardview.widget.CardView>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/car_map"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:fontFamily="@font/galano_grotesque_medium"
+                    android:text="@string/distance"
+                    android:textColor="@color/txt_black"
+                    android:textSize="@dimen/_14sdp" />
+
+                <LinearLayout
+                    android:id="@+id/ll_distance_filter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_distance"
+                    android:layout_marginTop="@dimen/_15sdp">
+
+                    <!--<include layout="@layout/layout_distance_seekbar" />-->
+                    <com.warkiz.widget.IndicatorSeekBar
+                        android:id="@+id/indicator_distance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:isb_progress="100"
+                        app:isb_seek_smoothly="true"
+                        app:isb_show_indicator="none"
+                        app:isb_show_thumb_text="true"
+                        app:isb_show_tick_marks_type="oval"
+                        app:isb_show_tick_texts="true"
+                        app:isb_thumb_drawable="@drawable/filled_color_primary_circle"
+                        app:isb_tick_marks_color="@color/line_hint_color"
+                        app:isb_tick_marks_drawable="@drawable/ic_blue_circle"
+                        app:isb_tick_texts_color="@color/colorPrimary"
+                        app:isb_tick_texts_size="@dimen/_9sdp"
+                        app:isb_ticks_count="5"
+                        app:isb_track_progress_color="@color/colorPrimary" />
+
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_price_renge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_distance_filter"
+
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:fontFamily="@font/galano_grotesque_medium"
+                    android:text="@string/price_range"
+                    android:textColor="@color/txt_black"
+                    android:textSize="@dimen/_14sdp" />
+
+                <LinearLayout
+                    android:id="@+id/ll_price_range"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_price_renge"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/text_input_from_price_range"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_set_location"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:hint="@string/from"
+                        android:textColorHint="#d1dfe9"
+                        app:boxCornerRadiusBottomEnd="@dimen/_8sdp"
+                        app:boxCornerRadiusBottomStart="@dimen/_8sdp"
+                        app:boxCornerRadiusTopEnd="@dimen/_8sdp"
+                        app:boxCornerRadiusTopStart="@dimen/_8sdp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_from_price_range"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableEnd="@drawable/ic_dollar"
+                            android:focusableInTouchMode="true"
+                            android:fontFamily="@font/galano_grotesque_regular"
+                            android:inputType="number"
+                            android:maxLength="8"
+                            android:textColor="@color/txt_black"
+                            android:textColorHint="#d1dfe9"
+                            android:textSize="@dimen/_13ssp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/text_input_to_price_page"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_set_location"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:layout_weight="1"
+                        android:hint="@string/to"
+                        android:textColorHint="#d1dfe9"
+                        app:boxCornerRadiusBottomEnd="@dimen/_8sdp"
+                        app:boxCornerRadiusBottomStart="@dimen/_8sdp"
+                        app:boxCornerRadiusTopEnd="@dimen/_8sdp"
+                        app:boxCornerRadiusTopStart="@dimen/_8sdp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_to_price_pange"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableEnd="@drawable/ic_dollar"
+                            android:focusableInTouchMode="true"
+                            android:fontFamily="@font/galano_grotesque_regular"
+                            android:inputType="number"
+                            android:maxLength="8"
+                            android:textColor="@color/txt_black"
+                            android:textColorHint="#d1dfe9"
+                            android:textSize="@dimen/_13ssp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_posted_within"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_price_range"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:fontFamily="@font/galano_grotesque_medium"
+                    android:text="@string/posted_within"
+                    android:textColor="@color/txt_black"
+                    android:textSize="@dimen/_14sdp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/text_input_posted_within"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_posted_within"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:hint="@string/select"
+                    android:textColorHint="#d1dfe9"
+                    app:boxCornerRadiusBottomEnd="@dimen/_8sdp"
+                    app:boxCornerRadiusBottomStart="@dimen/_8sdp"
+                    app:boxCornerRadiusTopEnd="@dimen/_8sdp"
+                    app:boxCornerRadiusTopStart="@dimen/_8sdp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_posted_within_pange"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/ic_filter_dropdown"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:fontFamily="@font/galano_grotesque_regular"
+                        android:textColor="@color/txt_black"
+                        android:textColorHint="#d1dfe9"
+                        android:textSize="@dimen/_13ssp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_conditions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_input_posted_within"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:fontFamily="@font/galano_grotesque_medium"
+                    android:text="@string/conditions"
+                    android:textColor="@color/txt_black"
+                    android:textSize="@dimen/_14sdp" />
+
+                <LinearLayout
+                    android:id="@+id/ll_conditions_row"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_conditions"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:id="@+id/rb_new"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:button="@drawable/radio_button_toggle"
+                        android:fontFamily="@font/galano_grotesque_regular"
+                        android:paddingStart="@dimen/_8sdp"
+                        android:text="@string/new_never_used" />
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:id="@+id/rb_like_new"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:button="@drawable/radio_button_toggle"
+                        android:fontFamily="@font/galano_grotesque_regular"
+                        android:paddingStart="@dimen/_8sdp"
+                        android:text="@string/like_new_rarely_used" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_conditions_row_second"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_conditions_row"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:id="@+id/rb_good"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:button="@drawable/radio_button_toggle"
+                        android:fontFamily="@font/galano_grotesque_regular"
+                        android:paddingStart="@dimen/_8sdp"
+                        android:text="@string/good_gently_used" />
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:id="@+id/rb_like_normal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@drawable/radio_button_toggle"
+                        android:checked="false"
+                        android:fontFamily="@font/galano_grotesque_regular"
+                        android:paddingStart="@dimen/_8sdp"
+                        android:text="@string/normal_normal_wear" />
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/rb_flawed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_conditions_row_second"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:button="@drawable/radio_button_toggle"
+                    android:fontFamily="@font/galano_grotesque_regular"
+                    android:paddingStart="@dimen/_8sdp"
+                    android:text="@string/flawed_with_flaw" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_seller_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rb_flawed"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:fontFamily="@font/galano_grotesque_medium"
+                    android:text="@string/seller_rate"
+                    android:textColor="@color/txt_black"
+                    android:textSize="@dimen/_14sdp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_seller_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_seller_type"
+                    android:layout_marginTop="@dimen/_15sdp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_seller"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rv_seller_type"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:fontFamily="@font/galano_grotesque_medium"
+                    android:text="@string/seller"
+                    android:textColor="@color/txt_black"
+                    android:textSize="@dimen/_14sdp" />
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/chk_seller_verified"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_seller"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:drawablePadding="@dimen/_8sdp"
+                    android:fontFamily="@font/galano_grotesque_regular"
+                    android:paddingStart="@dimen/_8sdp"
+                    android:text="@string/verified_seller_only"
+                    android:textColor="@color/txt_light_gray"
+                    android:textSize="@dimen/_12sdp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_apply"
+                    android:layout_width="@dimen/_220sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/chk_seller_verified"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginBottom="@dimen/_15sdp"
+                    android:background="@drawable/ic_login_button_bg"
+                    android:fontFamily="@font/galano_grotesque_semi_bold"
+                    android:gravity="center"
+                    android:text="@string/apply"
+
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/_14sdp" />
+            </RelativeLayout>
+        </androidx.core.widget.NestedScrollView>
+    </RelativeLayout>
+</layout>

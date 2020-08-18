@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/Black">
+
+    <ImageView
+        android:id="@+id/iv_toolbar_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        android:src="@drawable/ic_close"
+        android:tint="@color/White" />
+
+    <TextView
+        android:id="@+id/tv_toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLength="25"
+        android:textSize="18sp"
+        tools:ignore="MissingPrefix" />
+
+    <ImageView
+        android:id="@+id/iv_auto_focus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv_toolbar"
+        android:layout_alignTop="@+id/tv_toolbar"
+        android:layout_marginStart="-15dp"
+        android:layout_marginTop="-3dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:padding="5dp"
+        android:src="@drawable/ic_camera_flashlight_auto"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/iv_toolbar_right_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:ellipsize="end"
+        android:padding="@dimen/_8sdp"
+        android:text="@string/next"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        tools:ignore="MissingPrefix" />
+
+</RelativeLayout>

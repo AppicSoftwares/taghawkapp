@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_product"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/message_detail_product_header_bg"
+    android:foreground="?attr/selectableItemBackground"
+    android:orientation="horizontal"
+    android:paddingStart="@dimen/_15sdp"
+    android:paddingTop="@dimen/_10sdp"
+    android:paddingEnd="@dimen/_10sdp"
+    android:paddingBottom="@dimen/_10sdp">
+
+    <ImageView
+        android:id="@+id/iv_product"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_home_placeholder" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_product_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/galano_grotesque_semi_bold"
+            android:textColor="@color/txt_black"
+            android:textSize="@dimen/_12ssp"
+            tools:text="$1,50,000" />
+
+        <TextView
+            android:id="@+id/tv_product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/galano_grotesque_regular"
+            android:textColor="@color/txt_black"
+            android:textSize="@dimen/_12ssp"
+            tools:text="Mercedes - The best drive" />
+    </LinearLayout>
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_pending"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/galano_grotesque_semi_bold"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/_10ssp"
+        android:layout_gravity="center"
+         />
+</LinearLayout>

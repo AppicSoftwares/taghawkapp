@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/ll_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/message_detail_bg"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:contentInsetStart="0dp"
+            app:layout_collapseMode="pin">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/White">
+
+                <ImageButton
+                    android:id="@+id/ib_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:padding="@dimen/_10sdp"
+                    android:src="@drawable/ic_back_black" />
+
+                <TextView
+                    android:id="@+id/tv_toolbar_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="@dimen/_40sdp"
+                    android:layout_marginEnd="@dimen/_40sdp"
+                    android:background="?attr/selectableItemBackground"
+                    android:fontFamily="@font/galano_grotesque_medium"
+                    android:gravity="center"
+                    android:paddingStart="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:textColor="@color/txt_black"
+                    android:textSize="@dimen/_14ssp"
+                    tools:text="Annie Hall" />
+                <ImageButton
+                    android:id="@+id/ib_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:paddingStart="@dimen/_15sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_15sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:src="@drawable/ic_chat_more" />
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/message_detail_product_header_bg">
+            <TextView
+                android:id="@+id/tv_shelf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/shelf"
+                android:textAllCaps="true"
+                android:textSize="@dimen/_15ssp"
+                android:layout_gravity="center"
+                android:background="?attr/selectableItemBackground"
+                android:fontFamily="@font/galano_grotesque_semi_bold"
+                android:textColor="@color/txt_black"
+                android:paddingTop="@dimen/_25sdp"
+                android:paddingBottom="@dimen/_25sdp"
+                android:paddingStart="@dimen/_12sdp"
+                android:paddingEnd="@dimen/_12sdp"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_products"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never"
+                android:scrollbars="none" />
+        </LinearLayout>
+
+        <com.taghawk.custom_view.CustomTextView
+            android:id="@+id/tv_announcement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:background="@color/announcement_bg"
+            android:fontFamily="@font/galano_grotesque_medium"
+            android:freezesText="true"
+            android:gravity="center"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:padding="@dimen/_10sdp"
+            tools:text="This is marquee"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textColor="@color/txt_black"
+            android:textSize="@dimen/_11ssp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_messages"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:overScrollMode="never"
+            android:scrollbars="none" />
+
+        <LinearLayout
+            android:id="@+id/tv_no_data"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="@dimen/_15sdp"
+            android:visibility="gone">
+
+            <include
+                android:id="@+id/include_header_empty"
+                layout="@layout/layout_empty_place_holder" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_message_send"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/White"
+            android:elevation="@dimen/_2sdp"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp">
+
+            <ImageButton
+                android:id="@+id/ib_attachment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="?attr/selectableItemBackground"
+                android:padding="@dimen/_10sdp"
+                android:src="@drawable/ic_inbox_attach_pin" />
+
+            <EditText
+                android:id="@+id/et_message"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/galano_grotesque_regular"
+                android:gravity="center_vertical"
+                android:hint="@string/write_your_message"
+                android:inputType="textCapSentences|textMultiLine"
+                android:maxLines="3"
+                android:padding="@dimen/_5sdp"
+                android:textColorHint="@color/txt_light_gray"
+                android:textSize="@dimen/_11ssp" />
+
+            <ImageButton
+                android:id="@+id/ib_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="?attr/selectableItemBackground"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/ic_chat_send" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_alert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/message_detail_product_header_bg"
+            android:fontFamily="@font/galano_grotesque_medium"
+            android:gravity="center"
+            android:lineSpacingExtra="@dimen/_2sdp"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/sorry_you_can_t_send_messages_to_this_tag_as_you_are_muted_in_the_tag_by_owner"
+            android:textColor="@color/txt_black"
+            android:visibility="gone" />
+    </LinearLayout>
+</layout>

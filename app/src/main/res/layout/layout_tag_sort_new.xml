@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="@dimen/_170sdp"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/_10sdp"
+            app:cardCornerRadius="@dimen/_10sdp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_filled_background_tendp"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/_10sdp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_all_member"
+                    style="@style/sort_style"
+                    android:text="@string/all_member" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_above_ten_members"
+                    style="@style/sort_style"
+                    android:text="@string/above_10_members" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_above_fifty_members"
+                    style="@style/sort_style"
+                    android:text="@string/above_50_members" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_above_hundered_members"
+                    style="@style/sort_style"
+                    android:text="@string/above_100_members" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_above_five_hundered_members"
+                    style="@style/sort_style"
+                    android:text="@string/above_500_members" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_above_one_thousand_members"
+                    style="@style/sort_style"
+                    android:text="@string/above_1000_members" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</layout>

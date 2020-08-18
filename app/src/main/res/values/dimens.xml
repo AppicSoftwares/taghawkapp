@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="curve">@dimen/_30sdp</dimen>
+    <dimen name="minuscurve">@dimen/_minus30sdp</dimen>
+    <dimen name="margin_from_curve">@dimen/_40sdp</dimen>
+    <dimen name="rippleStrokeWidth">@dimen/_2sdp</dimen>
+    <dimen name="rippleRadius">@dimen/_64sdp</dimen>
+    <dimen name="calendar_width">@dimen/_50sdp</dimen>
+    <dimen name="calendar_height">@dimen/_37sdp</dimen>
+    <dimen name="image_layout">@dimen/_250sdp</dimen>
+    <dimen name="event_list_image">@dimen/_150sdp</dimen>
+    <dimen name="text_size_12dp">@dimen/_12sdp</dimen>
+</resources>
